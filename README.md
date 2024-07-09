@@ -1,7 +1,7 @@
 ### IMPORTANTE
 *CADA VEZ QUE VAYAN HACER UN CAMBIO USAR `git pull origin main`.
 
-*los primeros 2 commits son de prueba, ignorar.
+*los primeros commits son de prueba, ignorar.
 
 
 Usen `git clone "repositorio.url` -> para clonar el repositorio
