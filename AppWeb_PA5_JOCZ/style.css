@@ -1,0 +1,103 @@
+/* General form styling */
+body {
+    font-family: sans-serif;
+    margin: 10px;
+}
+
+
+form i{
+    position: relative;
+    bottom: 510px;
+    right: 415px;
+    font-size: 150px;
+}
+
+
+#calendar{
+    position: relative;
+    right: 513px;
+    bottom: 430px;
+    font-size: 40px;
+}
+
+#lb2{
+    position: relative;
+    right: 210px;
+    bottom: 510px;
+}
+
+#lb3{
+    position: relative;
+    bottom: 460px;
+    right: 210px;
+    font-size: 10px;
+}
+h1{
+    text-align: center;
+}
+
+form {
+    text-align:right;
+    width: 650px;
+    height: 650px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+ label {
+    padding: auto;
+    text-align:center;
+    display:block;
+    margin-bottom: 15px;
+    font-weight: bold;
+    
+}
+
+input[type="text"],
+input[type="file"] {
+    width: 58%;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+/* Align name, paternal last name, and maternal last name inputs to the right */
+.right-aligned {
+    text-align: left;
+}
+
+/* Style buttons */
+button {
+    padding: 10px 20px;
+    background-color: #f6f6f6;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+    border-color:aqua;
+}
+
+button:hover {
+    background-color: aqua; /* Slightly darker shade on hover */
+}
+
+#save{
+    position: relative;
+    bottom: 100px;
+}
+#rojo{
+    position: relative;
+    bottom: 100px;
+    background-color: red;
+    border: none;
+}
+
+/* Red delete button styles */
+
+
+
