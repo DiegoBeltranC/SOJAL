@@ -10,14 +10,14 @@
 
   </head>
   <body>
+
   <?php
         session_start();
         if (isset($_SESSION['usuario'])) {
-            header('Location: inicio.php');
+            header('Location: ./VISTAS/inicio.php');
             exit;
         }
-    ?>
-
+  ?>
     <nav>
       <div class="left">
         <img src="./images/logo.ico" alt="sojal.ico" />

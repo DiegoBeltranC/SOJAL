@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['usuario'])) {
-    header('Location: index.php');
+    header('Location: ../index.php');
     exit;
 }
 ?>
@@ -10,8 +10,7 @@ if (!isset($_SESSION['usuario'])) {
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./style.css" />
-    <script src="/inicio.js"></script>
+    <link rel="stylesheet" href="../css/vistaConCuadro.css"/>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -106,18 +105,30 @@ if (!isset($_SESSION['usuario'])) {
       <div class="text">Home content</div>
       <h1>Bienvenido, <?php echo $_SESSION['usuario']; ?>!</h1>
       <p>Esta es la página principal.</p>
-      <a href="logout.php">Cerrar Sesión</a>
+      <a href="../logout.php">Cerrar Sesión</a>
       -->
-
       <div class="filters-table">
         <h1>Notificaciones</h1>
         <h2>Filtrar por</h2>
-        <div class="radio-filters-table">
-          <label for="option1">Especificar</label>
-          <input type="radio" id="option1" name="radio-filters">
 
-          <label for="option2">Dinamico</label>
-          <input type="radio" id="option2" name="radio-filters">
+        <div class="notification-div-filter">
+          <label for="fecha-inicio-filter">Fecha Inicio: </label>
+          <input type="date" min="2020-01-01" id="fecha-inicio-filter" class="input-notification-filter">
+
+          <label for="fecha-expiracion-filter">Fecha Expiración: </label>
+          <input type="date" id="fecha-inicio-filter">
+          <br>
+          <br>
+
+          <label for="creation-filter">Creacion</label>
+          <select name="creation-filter" id="creation-filter">
+            <option value="reciente">reciente</option>
+            <option value="hace-un-mes">Hace un mes</option>
+          </select>
+          <select name="state-filter" id="state-filter">
+            <option value="inactivo">reciente</option>
+            <option value="activo">Hace un mes</option>
+          </select>
         </div>
 
       </div>

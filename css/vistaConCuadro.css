@@ -208,8 +208,8 @@ body{
     text-align: left;
 }
 
-.radio-filters-table input{
-    margin: 12px;
+.filters-table select{
+    margin: 16px;
 }
 
 .table-container {
