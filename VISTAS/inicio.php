@@ -124,10 +124,13 @@ if (!isset($_SESSION['usuario'])) {
           <select name="creation-filter" id="creation-filter">
             <option value="reciente">reciente</option>
             <option value="hace-un-mes">Hace un mes</option>
+            <option value="hace-un-ano">Hace un año</option>
           </select>
+
+          <label for="">Estado: </label>
           <select name="state-filter" id="state-filter">
-            <option value="inactivo">reciente</option>
-            <option value="activo">Hace un mes</option>
+            <option value="activo">activo</option>
+            <option value="inactivo">inactivo</option>
           </select>
         </div>
 
@@ -162,6 +165,33 @@ if (!isset($_SESSION['usuario'])) {
             </tbody>
         </table>
     </div>
+
+    <div class="form-container-notification">
+      <form action="">
+        <input type="text" class="title-form-notification" placeholder="TITULO">
+        <div class="image-form-notification">
+          <img src="" alt="">
+        </div>
+        <input type="file" >
+
+        <textarea name="textarea-form-notification" id="textarea-form-notification" placeholder="MENSAJE"></textarea>
+        <div class="footer-form-notification">
+          <a href="">@diego</a>
+          <div class="buttons-form-notification">
+            <input type="button" value="Eliminar">
+            <input type="button" value="Guardar">
+          </div>
+        </div>
+        
+        
+
+
+      </form>
+
+
+    </div>
+
+
 
   </body>
 </html>

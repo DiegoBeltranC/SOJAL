@@ -9,7 +9,6 @@ body{
     position: relative;
     min-height: 100vh ;
     width: 100%;
-    overflow: hidden;
 }
 
 .sidebar{
@@ -208,8 +207,12 @@ body{
     text-align: left;
 }
 
-.filters-table select{
-    margin: 16px;
+.filters-table label{
+    margin-left: 8px;
+
+}
+.filters-table input{
+    margin: 8px;
 }
 
 .table-container {
@@ -263,4 +266,47 @@ tbody tr:hover {
 
 .details-button:hover {
     background-color: #0056b3;
+}
+
+.form-container-notification{
+    width: 600px;
+    margin: 0 auto;
+    background-color: #0CA789;
+    padding: 32px;
+    border-radius: 8px;
+    border: black solid 2px;
+}
+.form-container-notification form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title-form-notification{
+    height: 30px;
+    width: 400px;
+}
+
+
+.form-container-notification .image-form-notification{
+    height: 200px;
+    width: 400px;
+    border: #000000 solid 2px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-color: #41B2A2;
+}
+
+.form-container-notification textarea{
+    width: 400px;
+    height: 150px;
+    margin-top: 20px;
+}
+
+.footer-form-notification{
+    display: flex;
+    margin-top: 20px;
+}
+
+.buttons-form-notification{
+    margin-left: 60px;
 }
