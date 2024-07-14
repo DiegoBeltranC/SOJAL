@@ -14,7 +14,7 @@
   <?php
         session_start();
         if (isset($_SESSION['usuario'])) {
-            header('Location: ./VISTAS/inicio.php');
+            header('Location: ./VISTAS/estadisticas.php');
             exit;
         }
   ?>

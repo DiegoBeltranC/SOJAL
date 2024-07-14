@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if ($usuario === $usuario_correcto && $contraseña === $contraseña_correcta) {
         $_SESSION['usuario'] = $usuario;
-        header('Location: ./VISTAS/inicio.php');
+        header('Location: ./VISTAS/estadisticas.php');
         exit;
     } else {
         echo "Usuario o contraseña incorrectos";
