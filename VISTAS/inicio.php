@@ -107,74 +107,72 @@ if (!isset($_SESSION['usuario'])) {
       <p>Esta es la página principal.</p>
       <a href="../logout.php">Cerrar Sesión</a>
       -->
-      <div class="filters-table">
-        <h1>Notificaciones</h1>
-        <h2>Filtrar por</h2>
+      <div class="dashboard-notifications" id="dashboard-notifications">
+          <div class="filters-table">
+            <h1>Notificaciones</h1>
+            <h2>Filtrar por</h2>
 
-        <div class="notification-div-filter">
-          <label for="fecha-inicio-filter">Fecha Inicio: </label>
-          <input type="date" min="2020-01-01" id="fecha-inicio-filter" class="input-notification-filter">
+            <div class="notification-div-filter">
+              <br>
+              <br>
 
-          <label for="fecha-expiracion-filter">Fecha Expiración: </label>
-          <input type="date" id="fecha-inicio-filter">
-          <br>
-          <br>
+              <label for="creation-filter">Creacion</label>
+              <select name="creation-filter" id="creation-filter">
+                <option value="reciente">reciente</option>
+                <option value="hace-una-semana">Hace 1 semana</option>
+                <option value="hace-dos-semanas">Hace 2 semanas</option>
+              </select>
 
-          <label for="creation-filter">Creacion</label>
-          <select name="creation-filter" id="creation-filter">
-            <option value="reciente">reciente</option>
-            <option value="hace-un-mes">Hace un mes</option>
-            <option value="hace-un-ano">Hace un año</option>
-          </select>
+              <label for="">Estado: </label>
+              <select name="state-filter" id="state-filter">
+                <option value="activo">activo</option>
+                <option value="inactivo">inactivo</option>
+              </select>
+            </div>
 
-          <label for="">Estado: </label>
-          <select name="state-filter" id="state-filter">
-            <option value="activo">activo</option>
-            <option value="inactivo">inactivo</option>
-          </select>
-        </div>
+          </div>
 
-      </div>
+          <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Título</th>
+                        <th>Administrador</th>
+                        <th>Me gusta</th>
+                        <th>Estado</th>
+                        <th>Fecha de Publicación</th>
+                        <th>Fecha de Expiración</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Example Row -->
+                    <tr>
+                        <td>1</td>
+                        <td>Título de la Noticia</td>
+                        <td>Admin1</td>
+                        <td>10</td>
+                        <td>Activo</td>
+                        <td>2024-07-10</td>
+                        <td>2024-08-10</td>
+                        <td><button class="details-button" id="detail-button">Detalles</button></td>
+                    </tr>
+                </tbody>
+            </table>
+          </div>
+      </div>    
 
-      <div class="table-container">
-        <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Título</th>
-                    <th>Administrador</th>
-                    <th>Me gusta</th>
-                    <th>Estado</th>
-                    <th>Fecha de Publicación</th>
-                    <th>Fecha de Expiración</th>
-                    <th>Acciones</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Example Row -->
-                <tr>
-                    <td>1</td>
-                    <td>Título de la Noticia</td>
-                    <td>Admin1</td>
-                    <td>10</td>
-                    <td>Activo</td>
-                    <td>2024-07-10</td>
-                    <td>2024-08-10</td>
-                    <td><button class="details-button">Detalles</button></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div class="form-container-notification">
+    <div class="form-container-notification" id="form-container-notification">
+      <img src="../Icons/icons8-close-50.png"  class="close-icon-form" id="close-icon-form">
       <form action="">
-        <input type="text" class="title-form-notification" placeholder="TITULO">
+        <input type="text" class="title-form-notification input-text" placeholder="TITULO">
         <div class="image-form-notification">
           <img src="" alt="">
         </div>
         <input type="file" >
 
-        <textarea name="textarea-form-notification" id="textarea-form-notification" placeholder="MENSAJE"></textarea>
+        <textarea name="textarea-form-notification" id="textarea-form-notification" placeholder="MENSAJE" class="input-text"></textarea>
         <div class="footer-form-notification">
           <a href="">@diego</a>
           <div class="buttons-form-notification">
@@ -192,6 +190,6 @@ if (!isset($_SESSION['usuario'])) {
     </div>
 
 
-
+  <script src="../JS/notificaciones.js"></script>
   </body>
 </html>

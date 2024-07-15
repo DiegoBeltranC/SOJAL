@@ -1,3 +1,4 @@
+/*SIDEBAR*/
 *{
     margin: 0;
     padding: 0;
@@ -183,11 +184,13 @@ body{
     border-radius: 12px;
 }
 
+/*BACKGROUND*/
 .home_content{
     position: absolute;
     height: 100%;
     width: calc(100% - 240px);
     left: 240px;
+
 }
 
 .home_content .text{
@@ -197,6 +200,7 @@ body{
     margin: 12px;
 }
 
+/*FILTROS*/
 .filters-table{
     width: 80%;
     margin: 20px auto;
@@ -215,6 +219,7 @@ body{
     margin: 8px;
 }
 
+/*TABLA*/
 .table-container {
     width: 80%;
     margin: 20px auto;
@@ -268,24 +273,41 @@ tbody tr:hover {
     background-color: #0056b3;
 }
 
+/*FORMULARIO*/
 .form-container-notification{
     width: 600px;
     margin: 0 auto;
-    background-color: #0CA789;
     padding: 32px;
     border-radius: 8px;
     border: black solid 2px;
+    display: none;
 }
+.close-icon-form{
+    left: 500px;
+    bottom: 20px;
+}
+
+.close-icon-form:hover{
+    cursor: pointer;
+}
+
 .form-container-notification form{
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 .title-form-notification{
-    height: 30px;
+    height: 60px;
     width: 400px;
+    margin-bottom: 30px;
 }
-
+.input-text{
+    background: white;
+    border-radius: 10px;
+    border: black solid 2px;   
+    text-align: center;
+}
 
 .form-container-notification .image-form-notification{
     height: 200px;
@@ -310,3 +332,24 @@ tbody tr:hover {
 .buttons-form-notification{
     margin-left: 60px;
 }
+
+.buttons-form-notification input:hover{
+    cursor: pointer;
+}
+.buttons-form-notification input:nth-child(1){
+    background-color: red;
+    padding: 8px;
+    border-radius: 6px;
+    border: solid black 2px;
+}
+
+.buttons-form-notification input:nth-child(2){
+    background-color:#0CA789;
+    padding: 8px;
+    border-radius: 6px;
+    border: solid black 2px;
+
+}
+
+
+
