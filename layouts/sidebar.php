@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['usuario'])) {
-    header('Location: index.php');
+    header('Location: ../index.php');
     exit;
 }
 ?>
@@ -10,7 +10,7 @@ if (!isset($_SESSION['usuario'])) {
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="/css/vistaConCuadro.css" />
+    <link rel="stylesheet" href="../css/vistaConCuadro.css"/>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -31,56 +31,56 @@ if (!isset($_SESSION['usuario'])) {
       <ul class="nav_list" style="list-style-type: none">
 
         <li>
-          <a href="#">
+          <a href="estadisticas.php">
             <i class='bx bxs-pie-chart-alt-2'></i>
             <span class="links_name">Estadisticas</span>
           </a>
           <span class="tooltip"> Estadisticas</span>
         </li>
         <li>
-          <a href="#">
+          <a href="informes.php">
             <i class='bx bxs-file-doc'></i>
             <span class="links_name">Evaluar Informes </span>
           </a>
           <span class="tooltip"> Evaluar Informes</span>
         </li>
         <li>
-          <a href="#">
+          <a href="notificacion.php">
             <i class='bx bxs-envelope' ></i>
             <span class="links_name">Notificaciones</span>
           </a>
           <span class="tooltip"> Notificaciones</span>
         </li>
         <li>
-          <a href="#">
+          <a href="trayectos.php">
             <i class='bx bx-map-pin'></i>
             <span class="links_name">Trayectos</span>
           </a>
           <span class="tooltip"> Trayectos</span>
         </li>
         <li>
-          <a href="#">
+          <a href="usuarios.php">
             <i class='bx bxs-user-account'></i>
             <span class="links_name">Usuarios</span>
           </a>
           <span class="tooltip"> Usuarios</span>
         </li>
         <li>
-          <a href="#">
+          <a href="trabajadores.php">
             <i class='bx bx-male-female'></i>
             <span class="links_name">Trabajadores</span>
           </a>
           <span class="tooltip"> Trabajadores</span>
         </li>
         <li>
-          <a href="#">
+          <a href="camiones.php">
             <i class='bx bxs-truck' ></i>
             <span class="links_name">Camiones</span>
           </a>
           <span class="tooltip"> Camiones</span>
         </li>
         <li>
-          <a href="#">
+          <a href="administradores.php">
             <i class='bx bxs-user-detail'></i>
             <span class="links_name">Administradores</span>
           </a>
@@ -100,56 +100,5 @@ if (!isset($_SESSION['usuario'])) {
         </div>
       </div>
     </div>
-    <div class="home_content">
-      <!--
-      <div class="text">Home content</div>
-      <h1>Bienvenido, <?php echo $_SESSION['usuario']; ?>!</h1>
-      <p>Esta es la página principal.</p>
-      <a href="logout.php">Cerrar Sesión</a>
-      -->
-
-      <div class="filters-table">
-        <h1>Notificaciones</h1>
-        <h2>Filtrar por</h2>
-        <div class="radio-filters-table">
-          <label for="option1">Especificar</label>
-          <input type="radio" id="option1" name="radio-filters">
-
-          <label for="option2">Dinamico</label>
-          <input type="radio" id="option2" name="radio-filters">
-        </div>
-
-      </div>
-
-      <div class="table-container">
-        <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Título</th>
-                    <th>Administrador</th>
-                    <th>Me gusta</th>
-                    <th>Estado</th>
-                    <th>Fecha de Publicación</th>
-                    <th>Fecha de Expiración</th>
-                    <th>Acciones</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Example Row -->
-                <tr>
-                    <td>1</td>
-                    <td>Título de la Noticia</td>
-                    <td>Admin1</td>
-                    <td>10</td>
-                    <td>Activo</td>
-                    <td>2024-07-10</td>
-                    <td>2024-08-10</td>
-                    <td><button class="details-button">Detalles</button></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
   </body>
 </html>
