@@ -282,12 +282,13 @@ tbody tr:hover {
     border: black solid 2px;
     display: none;
 }
-.close-icon-form{
+#close-icon-form{
+    position: relative;
     left: 500px;
-    bottom: 20px;
+    bottom: 20px;   
 }
 
-.close-icon-form:hover{
+#close-icon-form:hover{
     cursor: pointer;
 }
 
