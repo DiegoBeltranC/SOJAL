@@ -11,7 +11,7 @@
     <title>Estadisticas</title>
 </head>
 <body>
-<?php include 'sidebar.php';?>
+<?php include '../layouts/sidebar.php';?>
   <div class="home_content">
         <!--
         <div class="text">Home content</div>
@@ -22,7 +22,7 @@
         <div class="filters-table">
           <h1>Maquetado de prueba</h1>
           <h2>Filtrar por</h2>
-
+          <a href="../services/logout.php"> cerrar sesion</a> 
           <div class="notification-div-filter">
             <label for="fecha-inicio-filter">Fecha Inicio: </label>
             <input type="date" min="2020-01-01" id="fecha-inicio-filter" class="input-notification-filter">

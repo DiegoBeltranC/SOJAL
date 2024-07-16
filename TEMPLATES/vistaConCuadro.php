@@ -26,6 +26,7 @@ if (!isset($_SESSION['usuario'])) {
         <div class="logo">
           <i class="bx bx-trash-alt"></i>
           <div class="logo_name">SOJAL</div>
+          
         </div>
         <i class='bx bxs-cog' id="btn"></i>
       </div>
@@ -97,7 +98,8 @@ if (!isset($_SESSION['usuario'])) {
               <div class="job">Web Designer</div>
             </div>
           </div>
-          <i class="bx bx-log-out" id="log_out"></i>
+        
+         <i class="bx bx-log-out" id="log_out"></i>
         </div>
       </div>
     </div>

@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
-    <title>Usuarios</title>
+
+    <title>Camiones</title>
 </head>
 <body>
-<?php include 'sidebar.php';?>
+<?php include '../layouts/sidebar.php';?>
 <div class="home_content">
         <!--
         <div class="text">Home content</div>
@@ -19,13 +19,18 @@
         <a href="../logout.php">Cerrar Sesión</a>
         -->
         <div class="filters-table">
-          <h1>Usuarios</h1>
+          <h1>Camiones</h1>
           <h2>Filtrar por</h2>
 
           <div class="notification-div-filter">
-            <label for="fnombre">Nombre: </label>
-            <input type="text"  id="fnombre" class="input-notification-filter">
+            <label for="fmarca">Marca: </label>
+            <input type="text"  id="fmarca" class="input-notification-filter">
+            <label for="fmodelo">Modelo: </label>
+            <input type="text"  id="fmodelo" class="input-notification-filter">
+            <label for="fmatricula">Matricula: </label>
+            <input type="text"  id="fmatricula" class="input-notification-filter">
             <button type="button" class="btn btn-primary" id="">Filtrar</button>
+            <button type="button" class="btn btn-success" id="nuevo">Nuevo camion</button>
           </div>
 
         </div>
@@ -35,7 +40,11 @@
               <thead>
                   <tr>
                       <th>ID</th>
-                      <th>Usuario</th>
+                      <th>Id ruta</th>
+                      <th>Matricula</th>
+                      <th>Marca</th>
+                      <th>Modelo</th>
+                      <th>Estado</th>
                       <th>Acciones</th>
                   </tr>
               </thead>
@@ -43,18 +52,38 @@
                   <!-- Example Row -->
                   <tr>
                       <td>1</td>
-                      <td>Ariel Alejandro Rivero Moo</td>
+                      <td>#2</td>
+                      <td>ASW-3423</td>
+                      <td>DAF</td>
+                      <td>2015</td>
+                      <td>Activo</td>
                       <td><button type="button" class="btn btn-warning" id="detalles">Detalles</button></td>
                   </tr>
               </tbody>
           </table>
       </div>
   </div>
-  <div class="modal fade" id="usuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="crear" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 id="exampleModalLabel">Usuario</h3>
+                    <h3 id="exampleModalLabel">Crear</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Matense</p>
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" class="btn btn-primary" value="Guardar" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="editar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="exampleModalLabel">Editar camion</h3>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -72,8 +101,11 @@
 
 <script>
         $(document).ready(function() {
+            $("#nuevo").click(function() {
+                $("#crear").modal('show');
+            });
             $("#detalles").click(function() {
-                $("#usuario").modal('show');
+                $("#editar").modal('show');
             });
         });
         

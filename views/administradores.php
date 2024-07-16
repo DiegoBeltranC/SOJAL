@@ -11,7 +11,7 @@
     <title>Administradores</title>
 </head>
 <body>
-    <?php include 'sidebar.php';?>
+    <?php include '../layouts/sidebar.php';?>
     <div class="home_content">
         <!--
         <div class="text">Home content</div>
