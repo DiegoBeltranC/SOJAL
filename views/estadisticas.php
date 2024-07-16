@@ -2,15 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-    <link rel="stylesheet" href="../css/vistaConCuadro.css"/>
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="../css/homeContent.css" />
+    <link rel="stylesheet" href="../css/modals.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Estadisticas</title>
+  
 </head>
 <body>
+  
 <?php include '../layouts/sidebar.php';?>
   <div class="home_content">
         <!--
@@ -73,13 +72,13 @@
                         <td>Activo</td>
                         <td>2024-07-10</td>
                         <td>2024-08-10</td>
-                        <td><button class="details-button" id="detail-button">Detalles</button></td>
+                        <td><button class="details-button" id="btnModal">Detalles</button></td>
                     </tr>
                 </tbody>
             </table>
         </div>
       </div>
-
+<!--
       <div class="form-container-notification" id="form-container-notification">
         <img src="../Icons/icons8-close-50.png" alt="" id="close-icon-form">
         <form action="">
@@ -98,8 +97,49 @@
             </div>
           </div>
         </form>
-      </div>
+      </div>-->
+
+
+
   </div>
-  <script src="../JS/notificaciones.js"></script>
+  <div id="contenedor" class="contenedor">
+      <div id="contenedor-form">
+        <form class="form" >
+          <div class="container">
+            <img src="../images/cancelar.png" width="6%" alt="Cancelar" id="btnCancelarModal"/>
+          </div>
+          <h1 class="titulo">Hola, Bienvenido!</h1>
+          <hr class="hr" />
+          <div>
+            <label class="label" for="gmail">Correo:</label><br />
+            <input
+              class="inputs"
+              type="email"
+              id="gmail"
+              name="gmail"
+              placeholder="ejemplo@gmail.com"
+              required
+            /><br /><br />
+            
+            <label class="label" for="password">Contraseña:</label><br />
+            <input
+              class="inputs"
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Contraseña"
+              required
+            /><br /><br />
+            <label class="checkbox-container">
+              <input type="checkbox" class="checkbox" />
+              <span class="checkbox-custom"></span>
+              Mostrar Contraseña </label
+            ><br /><br />
+          </div>
+          <input type="submit" value="Iniciar Sesión" />
+        </form>
+      </div>
+    </div>
+  <script src="../js/modal.js"></script>
 </body>
 </html>
