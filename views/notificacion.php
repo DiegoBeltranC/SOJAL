@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/homeContent.css" />
     <link rel="stylesheet" href="../css/modals.css" />
+    <link rel="stylesheet" href="../css/notificacion.css" />
     
     <title>Estadisticas</title>
 </head>
@@ -32,19 +33,8 @@
             <br>
             <br>
 
-            <label for="creation-filter">Creacion</label>
-            <select name="creation-filter" id="creation-filter">
-              <option value="reciente">reciente</option>
-              <option value="hace-un-mes">Hace un mes</option>
-              <option value="hace-un-ano">Hace un año</option>
-            </select>
 
-            <label for="">Estado: </label>
-            <select name="state-filter" id="state-filter">
-              <option value="activo">activo</option>
-              <option value="inactivo">inactivo</option>
-            </select>
-            <button type="button" class="btn btn-success" id="">Filtrar</button>
+            <button type="button" class="btn-filter" id="">Filtrar</button>
             <button type="button" class="btn-primary" id="btnModal">Nuevo</button>
           </div>
 
@@ -58,7 +48,6 @@
                       <th>Título</th>
                       <th>Administrador</th>
                       <th>Me gusta</th>
-                      <th>Estado</th>
                       <th>Fecha de Publicación</th>
                       <th>Fecha de Expiración</th>
                       <th>Acciones</th>
@@ -71,7 +60,6 @@
                       <td>Título de la Noticia</td>
                       <td>Admin1</td>
                       <td>10</td>
-                      <td>Activo</td>
                       <td>2024-07-10</td>
                       <td>2024-08-10</td>
                       <td><button type="button" class="btn-warning" id="detalles">Detalles</button></td>
@@ -85,7 +73,7 @@
     <div id="contenedor-form">
       <form class="form">
           <div class="container">
-          <img src="../images/cancelar.png" width="6%" alt="Cancelar" id="btnCancelarModal"/>
+          <img src="../images/cancelar.png" width="6%" alt="Cancelar" id="btnCancelarModalNuevo" class="btnCancelar"/>
           </div>
           <h1 class="titulo">Nueva notificacion</h1>
           <hr class="hr" />
@@ -131,7 +119,7 @@
     <div id="contenedor-form">
       <form class="form">
           <div class="container">
-          <img src="../images/cancelar.png" width="6%" alt="Cancelar" id="btnCancelarModal"/>
+          <img src="../images/cancelar.png" width="6%" alt="Cancelar"  id="btnCancelarModalEditar" class="btnCancelar">
           </div>
           <h1 class="titulo">Editar notificacion</h1>
           <hr class="hr" />

@@ -4,13 +4,15 @@
   <meta charset="UTF-8" />
   <link rel="stylesheet" href="../css/homeContent.css" />
   <link rel="stylesheet" href="../css/modals.css" />
+  <link rel="stylesheet" href="../css/estadisticas.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Estadisticas</title>
 </head>
 <body>
   
 <?php include '../layouts/sidebar.php';?>
-  <div class="home_content">
+<div class="home_content">
+  <a href="../services/logout.php"> cerrar sesion</a> 
         <!--
         <div class="text">Home content</div>
         <h1>Bienvenido, <?php echo $_SESSION['usuario']; ?>!</h1>
@@ -21,62 +23,132 @@
           <div class="filters-table">
             <h1>Maquetado de prueba</h1>
             <h2>Filtrar por</h2>
-            <a href="../services/logout.php"> cerrar sesion</a> 
+
             <div class="notification-div-filter">
-              <label for="fecha-inicio-filter">Fecha Inicio: </label>
-              <input type="date" min="2020-01-01" id="fecha-inicio-filter" class="input-notification-filter">
-
-              <label for="fecha-expiracion-filter">Fecha Expiración: </label>
-              <input type="date" id="fecha-inicio-filter">
               <br>
               <br>
 
-              <label for="creation-filter">Creacion</label>
+              <label for="creation-filter">Tipo grafica</label>
               <select name="creation-filter" id="creation-filter">
-                <option value="reciente">reciente</option>
-                <option value="hace-un-mes">Hace un mes</option>
-                <option value="hace-un-ano">Hace un año</option>
+                <option value="reciente">grafica 1</option>
+                <option value="hace-un-mes">grafica 2</option>
+                <option value="hace-un-ano">grafica 3/option>
               </select>
-
-              <label for="">Estado: </label>
-              <select name="state-filter" id="state-filter">
-                <option value="activo">activo</option>
-                <option value="inactivo">inactivo</option>
-              </select>
+              <br>
+              <br>
+              <h3>Periodo: </h3>
+              <br>
+              <label for="periodo-estadistica1" >Semanas</label>
+              <input type="radio" name="periodo-estadistica" id="periodo-estadistica1" >
+              <br>
+              <label for="periodo-estadistica2" >Meses</label>
+              <input type="radio" name="periodo-estadistica" id="periodo-estadistica2" >
+              <br>
+              <label for="periodo-estadistica3" >Años</label>
+              <input type="radio" name="periodo-estadistica" id="periodo-estadistica3" >
             </div>
 
           </div>
 
-          <div class="table-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Título</th>
-                        <th>Administrador</th>
-                        <th>Me gusta</th>
-                        <th>Estado</th>
-                        <th>Fecha de Publicación</th>
-                        <th>Fecha de Expiración</th>
-                        <th>Acciones</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Example Row -->
-                    <tr>
-                        <td>1</td>
-                        <td>Título de la Noticia</td>
-                        <td>Admin1</td>
-                        <td>10</td>
-                        <td>Activo</td>
-                        <td>2024-07-10</td>
-                        <td>2024-08-10</td>
-                        <td><button class="btn-warning" id="btnModal">Detalles</button></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+  <div class="graphic-container">
+    <div class="graphic-div">
+      <div class="graphic-img">
+        <img src="../images/3349622.png" alt="">
       </div>
+      <div class="graphic-text">
+        <h3>Tipo estado</h3>
+        <br>
+        <span>Informes espera</span>
+        <br>
+        <span>Informes dados</span>
+        <br>
+        <br>
+        <h3>Porcentajes</h3>
+        <br>
+        <span>80%</span>
+        <br>
+        <span>20%</span>
+      </div>
+    </div>
+    <div class="graphic-div">
+      <div class="graphic-img">
+        <img src="../images/3349622.png" alt="">
+      </div>
+      <div class="graphic-text">
+        <h3>Tipo estado</h3>
+        <br>
+        <span>Informes espera</span>
+        <br>
+        <span>Informes dados</span>
+        <br>
+        <br>
+        <h3>Porcentajes</h3>
+        <br>
+        <span>80%</span>
+        <br>
+        <span>20%</span>
+      </div>
+    </div>
+    <div class="graphic-div">
+      <div class="graphic-img">
+        <img src="../images/3349622.png" alt="">
+      </div>
+      <div class="graphic-text">
+        <h3>Tipo estado</h3>
+        <br>
+        <span>Informes espera</span>
+        <br>
+        <span>Informes dados</span>
+        <br>
+        <br>
+        <h3>Porcentajes</h3>
+        <br>
+        <span>80%</span>
+        <br>
+        <span>20%</span>
+      </div>
+    </div>
+    <div class="graphic-div">
+      <div class="graphic-img">
+        <img src="../images/3349622.png" alt="">
+      </div>
+      <div class="graphic-text">
+        <h3>Tipo estado</h3>
+        <br>
+        <span>Informes espera</span>
+        <br>
+        <span>Informes dados</span>
+        <br>
+        <br>
+        <h3>Porcentajes</h3>
+        <br>
+        <span>80%</span>
+        <br>
+        <span>20%</span>
+      </div>
+    </div>
+    <div class="graphic-div">
+      <div class="graphic-img">
+        <img src="../images/3349622.png" alt="">
+      </div>
+      <div class="graphic-text">
+        <h3>Tipo estado</h3>
+        <br>
+        <span>Informes espera</span>
+        <br>
+        <span>Informes dados</span>
+        <br>
+        <br>
+        <h3>Porcentajes</h3>
+        <br>
+        <span>80%</span>
+        <br>
+        <span>20%</span>
+      </div>
+    </div>
+  </div>
+
+</div>
 <!--
       <div class="form-container-notification" id="form-container-notification">
         <img src="../Icons/icons8-close-50.png" alt="" id="close-icon-form">

@@ -22,15 +22,18 @@
           <h2>Filtrar por</h2>
 
           <div class="notification-div-filter">
-            <label for="fecha-inicio-filter">Fecha Inicio: </label>
-            <input type="date" min="2020-01-01" id="fecha-inicio-filter" class="input-notification-filter">
-
-            <label for="fecha-expiracion-filter">Fecha Expiración: </label>
-            <input type="date" id="fecha-inicio-filter">
+            <label for="fnombre">Nombre Trabajador: </label>
+            <input type="text"  id="fnombre" class="input-notification-filter">
+            <br><br>
+            <label for="fnombre">Reporte: </label>
+            <select name="colonia" id="colonia">
+              <option value="">ejemplo 1</option>
+              <option value="">ejemplo 2</option>
+            </select>
             <br>
             <br>
 
-            <button type="button" class="btn btn-primary" >Filtrar</button>
+            <button type="button" class="btn btn-primary">Filtrar</button>
             <button type="button" class="btn-primary" id="btnModal">Nuevo</button>
           </div>
 
@@ -65,7 +68,7 @@
         <div id="contenedor-form">
             <form class="form" >
                 <div class="container">
-                <img src="../images/cancelar.png" width="6%" alt="Cancelar" id="btnCancelarModal"/>
+                <img src="../images/cancelar.png" width="6%" alt="Cancelar" id="btnCancelarModalNuevo" class="btnCancelar"/>
                 </div>
                 <h1 class="titulo">Nuevo trabajador</h1>
                 <hr class="hr" />
@@ -157,7 +160,7 @@
         <div id="contenedor-form">
         <form class="form" >
             <div class="container">
-            <img src="../images/cancelar.png" width="6%" alt="Cancelar" id="btnCancelarModal"/>
+            <img src="../images/cancelar.png" width="6%" alt="Cancelar" id="btnCancelarModalEditar" class="btnCancelar"/>
             </div>
             <h1 class="titulo">Trabajador</h1>
             <hr class="hr" />
@@ -199,7 +202,7 @@
             <input type="submit" value="Guardar" />
         </form>
         </div>
-    </div>
+</div>
   
     <script src="../js/modal.js"></script>
 </body>

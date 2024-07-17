@@ -57,7 +57,7 @@
         <div id="contenedor-form">
         <form class="form" >
             <div class="container">
-            <img src="../images/cancelar.png" width="6%" alt="Cancelar" id="btnCancelarModal"/>
+            <img src="../images/cancelar.png" width="6%" alt="Cancelar" id="btnCancelarModalNuevo" class="btnCancelar"/>
             </div>
             <h1 class="titulo">Nuevo administrador</h1>
             <hr class="hr" />
@@ -147,7 +147,7 @@
         <div id="contenedor-form">
         <form class="form" >
             <div class="container">
-            <img src="../images/cancelar.png" width="6%" alt="Cancelar" id="btnCancelarModal"/>
+            <img src="../images/cancelar.png" width="6%" alt="Cancelar" id="btnCancelarModalEditar" class="btnCancelar"/>
             </div>
             <h1 class="titulo">Editar administrador</h1>
             <hr class="hr" />

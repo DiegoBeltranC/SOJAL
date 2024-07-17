@@ -1,18 +1,17 @@
-document.getElementById("btnCancelarModal").addEventListener("click", function () {
+document.getElementById("btnCancelarModalNuevo").addEventListener("click", function () {
     var div = document.querySelector(".contenedor");
     div.style.display = "none";
   });
 
-  document.getElementById("btnCancelarModal").addEventListener("click", function () {
+  document.getElementById("btnCancelarModalEditar").addEventListener("click", function () {
     var div = document.querySelector(".editar");
     div.style.display = "none";
   });
 
-  document.getElementById('btnModal').addEventListener('click', function() {
+document.getElementById('btnModal').addEventListener('click', function() {
     let div = document.querySelector('.contenedor');
     document.querySelector('.contenedor').style.display = 'block';
     div.classList.add('animated'); 
-
 });
 
 document.getElementById('detalles').addEventListener('click', function() {

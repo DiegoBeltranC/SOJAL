@@ -36,6 +36,7 @@
             <br>
 
             <h2>Filtrar por</h2>
+            <br>
             <label for="publicaciones">Publicaciones: </label>
             <select name="publicaciones" id="publicaciones">
               <option value="">ejemplo 1</option>
