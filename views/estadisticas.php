@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-    <link rel="stylesheet" href="../css/homeContent.css" />
-    <link rel="stylesheet" href="../css/modals.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Estadisticas</title>
-  
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="../css/homeContent.css" />
+  <link rel="stylesheet" href="../css/modals.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estadisticas</title>
 </head>
 <body>
   
@@ -72,7 +71,7 @@
                         <td>Activo</td>
                         <td>2024-07-10</td>
                         <td>2024-08-10</td>
-                        <td><button class="details-button" id="btnModal">Detalles</button></td>
+                        <td><button class="btn-warning" id="btnModal">Detalles</button></td>
                     </tr>
                 </tbody>
             </table>
