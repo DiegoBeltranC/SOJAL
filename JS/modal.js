@@ -3,10 +3,20 @@ document.getElementById("btnCancelarModal").addEventListener("click", function (
     div.style.display = "none";
   });
 
+  document.getElementById("btnCancelarModal").addEventListener("click", function () {
+    var div = document.querySelector(".editar");
+    div.style.display = "none";
+  });
 
   document.getElementById('btnModal').addEventListener('click', function() {
     let div = document.querySelector('.contenedor');
     document.querySelector('.contenedor').style.display = 'block';
     div.classList.add('animated'); 
 
+});
+
+document.getElementById('detalles').addEventListener('click', function() {
+  let div = document.querySelector('.editar');
+  document.querySelector('.editar').style.display = 'block';
+  div.classList.add('animated'); 
 });

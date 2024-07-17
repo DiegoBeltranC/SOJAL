@@ -45,7 +45,7 @@
               <option value="inactivo">inactivo</option>
             </select>
             <button type="button" class="btn btn-success" id="">Filtrar</button>
-            <button type="button" class="btn btn-success" id="nuevo">Nuevo</button>
+            <button type="button" class="btn-primary" id="btnModal">Nuevo</button>
           </div>
 
         </div>
@@ -74,14 +74,107 @@
                       <td>Activo</td>
                       <td>2024-07-10</td>
                       <td>2024-08-10</td>
-                      <td><button type="button" class="btn btn-success" id="detalles">Detalles</button></td>
+                      <td><button type="button" class="btn-warning" id="detalles">Detalles</button></td>
                   </tr>
               </tbody>
           </table>
       </div>
   </div>
 
+  <div id="contenedor" class="contenedor">
+    <div id="contenedor-form">
+      <form class="form">
+          <div class="container">
+          <img src="../images/cancelar.png" width="6%" alt="Cancelar" id="btnCancelarModal"/>
+          </div>
+          <h1 class="titulo">Nueva notificacion</h1>
+          <hr class="hr" />
+          
+          <div>
+            <div class="row">
+                <input class="inputs"  type="text" id="ftitulo" name="titulo" placeholder="Titulo" required />
+            </div>
 
+            <br>
+
+            <div class="row">
+                <input class="inputs"  type="file" id="fileDocumento" name="fileDocumento">
+            </div>
+
+            <br>
+
+            <div class="row">
+              <div class="col-izquierda">
+                <label class="label" for="ffecha-publi"> Inicio: </label>
+                  <input class="inputs"  type="date" id="ffecha-publi" name="fehaPubli" required>
+              </div>
+              <div class="col-derecha">
+                <label class="label" for="ffecha-publi"> Fin: </label>
+                <input class="inputs"  type="date" id="ffecha-elim" name="fechaEli" required>
+              </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+                <textarea class="inputs"  id="fcuerpo" name="cuerpo" placeholder="Escribe.." style="height: 200px" required ></textarea>
+            </div>
+
+            <br>
+          </div>
+          <input type="submit" value="Guardar" />
+      </form>
+    </div>
+  </div>
+
+  <div id="editar" class="editar">
+    <div id="contenedor-form">
+      <form class="form">
+          <div class="container">
+          <img src="../images/cancelar.png" width="6%" alt="Cancelar" id="btnCancelarModal"/>
+          </div>
+          <h1 class="titulo">Editar notificacion</h1>
+          <hr class="hr" />
+          
+          <div>
+            <div class="row">
+              <input class="inputs" type="text" id="fEdittitulo" name="titulo"  value="Titulo anterior" />
+            </div>
+
+            <br>
+
+            <div class="row">
+              <input class="inputs" type="file" id="EditfileDocumento" name="fileDocumento">
+            </div>
+
+            <br>
+
+            <div class="row">
+              <div class="col-izquierda">
+                <label class="label" for="Editffecha-publi"> Inicio: </label>
+                <input class="inputs" type="date" id="Editffecha-publi" name="fehaPubli" value="2024-07-14">
+              </div>
+              <div class="col-izquierda">
+                <label class="label" for="Editffecha-elim"> Fin: </label>
+                <input class="inputs" type="date" id="Editffecha-elim" name="fechaEli" value="2024-07-15">
+              </div>
+            </div>
+
+            <br>
+
+            <div class="row">
+                <textarea class="inputs" id="fEditcuerpo" name="cuerpo" placeholder="Escribe.." style="height: 200px" value="Texto anterior" ></textarea>
+            </div>
+
+            <br>
+
+            <p class="label">@Ariel Alejandro Rivero Moo</p>
+          </div>
+          <input type="submit" value="Guardar" />
+      </form>
+    </div>
+  </div>
+  <script src="../js/modal.js"></script>
 
 </body>
 </html>

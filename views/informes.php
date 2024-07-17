@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/homeContent.css" />
-    <link rel="stylesheet" href="../css/modals.css" />
+  <link rel="stylesheet" href="../css/homeContent.css" />
+  <link rel="stylesheet" href="../css/modals.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--<link rel="stylesheet" href="../css/trabajador.css"/>-->
-    <link rel="stylesheet" href="../css/trabajador.css"/>
     <title>Evaluar informes</title>
 </head>
 <body>
@@ -20,6 +17,7 @@
         <p>Esta es la página principal.</p>
         <a href="../logout.php">Cerrar Sesión</a>
         -->
+        <div id="dashboard-notifications">
         <div class="filters-table">
           <h1>Evaluar informes</h1>
           <!--<h2>Foto de maps de chetumal</h2>-->
@@ -33,7 +31,7 @@
               <option value="">ejemplo 1</option>
               <option value="">ejemplo 2</option>
             </select>
-            <button type="button" class="btn btn-primary" >Filtrar</button>
+            <button type="button" class="btn-primary" >Filtrar</button>
             <br>
             <br>
 
@@ -77,13 +75,49 @@
                       <td>Ariel</td>
                       <td>2024-07-10</td>
                       <td>Espera</td>
-                      <td><button type="button" class="btn btn-success" id="nuevo">Asignar</button></td>
+                      <td><button class="btn-warning" id="btnModal">Asignar</button></td>
                   </tr>
               </tbody>
           </table>
+        </div>
       </div>
   </div>
 
+  <div id="contenedor" class="contenedor">
+    <div id="contenedor-form">
+      <form class="form" >
+        <div class="container">
+          <img src="../images/cancelar.png" width="6%" alt="Cancelar" id="btnCancelarModal"/>
+        </div>
+        <h1 class="titulo">Asignar reporte</h1>
+        <hr class="hr" />
+        <div>
+          <label class="label" for="tipo_reporte">Tipo de reporte: </label><br/>
+          <select class="inputs" name="tipo_reporte" id="ftipo_reporte">
+            <option value="">ejemplo 1</option>
+            <option value="">ejemplo 2</option>
+          </select>
+          <br>
+
+          <h4 class="label">Descripción</h4>
+          <p class="label">Lo saca de la bd</p>
+         
+          <br>
+          <p class="label">Creado por <br>@Ariel Alejandro Rivero Moo</p>
+          <br>
+          <label class="label" for="trabajador">Trabajador</label>
+          <select class="inputs" id="fTrabajador" name="select">
+            <option value="1" >Trabajador 1</option>
+            <option value="2" >Trabajador 2</option>
+            <option value="3">Trabajador 3</option>
+          </select>
+          <br>
+        </div>
+        <input type="submit" value="Guardar" />
+      </form>
+    </div>
+  </div>
+  <script src="../js/modal.js"></script>
   
 
 </body>
