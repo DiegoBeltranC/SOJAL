@@ -30,7 +30,7 @@
             <label for="fmatricula">Matricula: </label>
             <input type="text"  id="fmatricula" class="input-notification-filter">
             <button type="button" class="btn btn-primary" id="">Filtrar</button>
-            <button type="button" class="btn btn-success" id="nuevo">Nuevo camion</button>
+            <button type="button" class="btn-primary" id="nuevo">Nuevo camion</button>
           </div>
 
         </div>
@@ -57,7 +57,7 @@
                       <td>DAF</td>
                       <td>2015</td>
                       <td>Activo</td>
-                      <td><button type="button" class="btn btn-warning" id="detalles">Detalles</button></td>
+                      <td><button type="button" class="btn-warning" id="detalles">Detalles</button></td>
                   </tr>
               </tbody>
           </table>

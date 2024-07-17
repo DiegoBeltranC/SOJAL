@@ -48,6 +48,14 @@
     position: absolute;
     background-color: rgba(0, 0, 0, 0.256);
 }
+
+#editar {
+  width: 100%;
+  display: none;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.256);
+}
 body {
     margin: 0;
 }
@@ -109,6 +117,27 @@ input[type="submit"] {
     animation: entrada 0.3s ease-in-out;
   }
   
+.col-derecha {
+  /*Lo mantiene fijo a la izquierda*/
+  float: right;
+  /*Ocupa el 50% del espacio total*/
+  width: 47%;
+  margin-top: 6px;
+}
+
+.col-izquierda {
+    /*Lo mantiene fijo a la izquierda*/
+    float: left;
+    /*Ocupa el 50% del espacio total*/
+    width: 47%;
+    margin-top: 6px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
   @media (max-width: 700px) { 
     #loginForm {
