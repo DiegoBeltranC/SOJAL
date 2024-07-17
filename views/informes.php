@@ -88,7 +88,7 @@
     <div id="contenedor-form">
       <form class="form" >
         <div class="container">
-          <img src="../images/cancelar.png" width="6%" alt="Cancelar" id="btnCancelarModal"/>
+          <img src="../images/cancelar.png" width="6%" alt="Cancelar" id="btnCancelarModalNuevo" class="btnCancelar"/>
         </div>
         <h1 class="titulo">Asignar reporte</h1>
         <hr class="hr" />
@@ -118,7 +118,7 @@
       </form>
     </div>
   </div>
-  <script src="../js/modal.js"></script>
+  <script src="../js/notificacion_modal.js"></script>
   
 
 </body>
