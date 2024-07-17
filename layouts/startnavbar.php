@@ -18,9 +18,9 @@
         <h2>SOJAL</h2>
         <a href="index.php">Descripción</a>
 
-        <a href="descargarApp.php">¿Quienes somos?</a>
+        <a href="quienesSomos.php">¿Quienes somos?</a>
 
-        <a href="#">Descargar App</a>
+        <a href="descargarApp.php">Descargar App</a>
       </div>
       <div class="right">
         <input id="btnFormulario" type="button" value="Iniciar Sesión">

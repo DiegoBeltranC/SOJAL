@@ -19,10 +19,21 @@
         -->
         <div class="filters-table">
           <h1>Trayectos</h1>
-          <h2></h2>
-      </div>
-  </div>
-    
+          <div class="row">  
+            <div class="col-izquierda">
+              <h3>Camión 1</h3>
+              <br>
+              <img src="../images/ruta1.png" width="380" height="280" alt="ruta1" id="ruta1"/>
+            </div>      
+            <div class="col-derecha">
+              <h3>Camión 2</h3>
+              <br>
+              <img src="../images/ruta2.png" width="380" height="280" alt="ruta2" id="ruta2"/>
+            </div>  
+          </div>
+          
+        </div>
+</div>
    
 </body>
 </html>

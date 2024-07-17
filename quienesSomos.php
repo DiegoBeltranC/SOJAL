@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Descargar App</title>
+    <title>SOJAL</title>
     <link rel="icon" href="./images/logo.ico" />
     <link rel="stylesheet" href="./css/navbar.css" />
 
@@ -28,9 +28,11 @@
 
 <div class="contenedor-principal">
         <div class="contenedor-inf">
-          <h1 style="text-align: center;">Descargar nuestra app</h1>
+          <h1 style="text-align: center;">¿Quienes somos?</h1>
             <p>
-                Aparecera el qr de la aplicación
+                ¡¡Que alegria conocernos!! <br><br> Somos alumnos de la Universidad Tecnologica de Chetumal, estamos muy preocupados por
+                la cantidad de contaminación que se esta presentando en nuestra ciudad y de ahí nace nuestra compañia. <br><br>
+                A continuación te dejare nuestras redes sociales para que puedas conocernos mejor.
             </p>
         </div>
         
@@ -68,6 +70,8 @@ p {
   
    
 }
+
+
 
 
 </style>
