@@ -15,6 +15,7 @@
     transform: translate(-50%,
             -50%);
     /* Corrige el centro ajustando la mitad del tamaño del elemento */
+    
 }
 .form{
     margin: 2rem;
@@ -35,13 +36,24 @@
 #btnCancelarModal:hover{
     cursor: pointer;
 }
+.div-image-container{
+    display: flex;
+    justify-content: center;
+}
+.profile-picture-user{
+    width: 200px;
+}
+.apellido-div{
+    display: flex;
+    justify-content: space-around;
+}
 .label {
     font-size: larger;
     margin-top: 10px;
     margin-left: 10%;
     margin-right: 10%;
-  }
-  #contenedor {
+}
+#contenedor {
     width: 100%;
     display: none;
     height: 100%;
@@ -61,8 +73,34 @@ body {
     margin: 20px auto;
     background-color: #41B2A2;
 }
+.buttons-user-form{
+    display: flex;
+    justify-content: center;
+}
+.buttons-user-form input{
+    font-size: medium;
+    margin-top: 1rem;
+    color: #ffffff;
+    width: 25%;
+    height: 3.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.buttons-user-form input:nth-child(1){
+    background-color: #0ca664;
+}
 
-input[type="submit"] {
+.buttons-user-form input:nth-child(2){
+    background-color: #0df164;
+}
+.buttons-user-form input:nth-child(3){
+    background-color: red;
+}
+
+.primary-button-form{
     font-size: medium;
     margin-top: 1rem;
     color: #ffffff;
