@@ -12,7 +12,7 @@
   
 <?php include '../layouts/sidebar.php';?>
 <div class="home_content">
-  <a href="../services/logout.php"> cerrar sesion</a> 
+  
         <!--
         <div class="text">Home content</div>
         <h1>Bienvenido, <?php echo $_SESSION['usuario']; ?>!</h1>
@@ -21,7 +21,7 @@
         -->
         <div id="dashboard-notifications">
           <div class="filters-table">
-            <h1>Maquetado de prueba</h1>
+            <h1>Estadisticas</h1>
             <h2>Filtrar por</h2>
 
             <div class="notification-div-filter">

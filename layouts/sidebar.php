@@ -90,13 +90,14 @@ if (!isset($_SESSION['usuario'])) {
       <div class="profile_content">
         <div class="profile">
           <div class="profile_details">
-            <img src="/images/user.jpg" alt="" />
+            <img src="../images/user.jpg" alt="" />
             <div class="name_job">
               <div class="name">Administrador</div>
               <div class="job">Web Designer</div>
             </div>
           </div>
-          <i class="bx bx-log-out" id="log_out"></i>
+          <a href="../services/logout.php"><i class="bx bx-log-out" id="log_out"></i></a> 
+          
         </div>
       </div>
     </div>
