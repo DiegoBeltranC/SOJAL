@@ -12,7 +12,7 @@
 
     <div class="nav">
         <div class="user-container">
-            <div class="user-icon-container"><img src="./icons/profile.jpg" alt=""></div>
+            <div class="user-icon-container"><img src="../icons/profile.jpg" alt=""></div>
             <div class="user-name-container">
                 <p>Jonathan Cherriz Solis</p>
             </div>

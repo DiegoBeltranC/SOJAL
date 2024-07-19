@@ -131,8 +131,11 @@
                     </div>
                     <div>
                        
+                   
                        <img class="img" src="../img/lapiz.png" alt="">
+                       <a href="">
                        <img class="img" src="../img/lista-de-verificacion.png" alt="">
+                       </a>
                     </div>
                 </div>
             </div>

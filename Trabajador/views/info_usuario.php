@@ -21,7 +21,7 @@
 
 <div class="contenedor">
     <div class="header">
-        <img src="../icons/profile.jpg" alt="Foto de Juan Pérez Martínez">
+        <img src="../../Icons/profile.jpg" alt="Foto de Juan Pérez Martínez">
         <h1>Juan Pérez Martínez</h1>
     </div>
 
