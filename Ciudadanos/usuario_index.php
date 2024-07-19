@@ -80,12 +80,14 @@
                     </div>
                 </div>
             </a>    
+            <a href="./views/info_usuario.php">
             <div class="option-user">
                 <h2>Usuario</h2>
                 <div class="option-img-container">
                     <img src="../Icons/profile.jpg" alt="">
                 </div>
             </div>
+            </a>
         </div>
         <div class="map-container">
             <div class="map-img-container">
