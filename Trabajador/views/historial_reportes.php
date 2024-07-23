@@ -63,7 +63,9 @@
 
         </div>
         <div class="log-out-container">
-            <button id="log-out">Cerrar Session</button>
+            <a href="../index.php">
+                <button id="log-out">Cerrar Session</button>
+            </a>
         </div>
     </div>
 

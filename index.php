@@ -22,7 +22,7 @@
       include './components/viewLogin.php';
   ?>
 <?php
-      include './layouts/Startnavbar.php';
+      include './layouts/startnavbar.php';
   ?>
 
 

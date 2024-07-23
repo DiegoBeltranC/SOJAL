@@ -172,7 +172,7 @@
         </div>
 </div>
   
-<script src="../js/modal.js"></script>
+<script src="../JS/modal.js"></script>
 </body>
 </html>
 

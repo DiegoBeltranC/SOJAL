@@ -118,7 +118,7 @@
       </form>
     </div>
   </div>
-  <script src="../js/notificacion_modal.js"></script>
+  <script src="../JS/notificacion_modal.js"></script>
   
 
 </body>
