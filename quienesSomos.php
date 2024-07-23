@@ -12,11 +12,7 @@
   <body>
 
   <?php
-        session_start();
-        if (isset($_SESSION['usuario'])) {
-            header('Location: ./views/estadisticas.php');
-            exit;
-        }
+
   ?>
 <?php
       include './components/viewLogin.php';

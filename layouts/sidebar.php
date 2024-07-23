@@ -1,10 +1,4 @@
-<?php
-session_start();
-if (!isset($_SESSION['usuario'])) {
-    header('Location: ../index.php');
-    exit;
-}
-?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -26,7 +20,7 @@ if (!isset($_SESSION['usuario'])) {
           <i class="bx bx-trash-alt"></i>
           <div class="logo_name">SOJAL</div>
         </div>
-        <i class='bx bxs-cog' id="btn"></i>
+        
       </div>
       <ul class="nav_list" style="list-style-type: none">
 

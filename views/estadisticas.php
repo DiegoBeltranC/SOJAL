@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +16,7 @@
   
         <!--
         <div class="text">Home content</div>
-        <h1>Bienvenido, <?php echo $_SESSION['usuario']; ?>!</h1>
+        <h1>Bienvenido, 
         <p>Esta es la página principal.</p>
         <a href="../logout.php">Cerrar Sesión</a>
         -->

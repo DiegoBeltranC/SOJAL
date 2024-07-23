@@ -8,24 +8,24 @@
 </head>
   <body>
 <div class="body">
-<div id="loginForm">
-    <form class="formulario" action="./services/login.php" method="post">
-    <div class="container">
-    <a id="btnCancelar" ><img src="./images/cancelar.png" width="6%" alt="Cancelar"></a>
-</div>
-        <h1 class="titulo">Hola, Bienvenido!</h1>
-        <hr class="hr-login">
-        <label class="label" for="gmail">Correo:</label><br>
-        <input type="email" id="gmail" name="gmail" placeholder="ejemplo@gmail.com" required><br><br>
-        <label class="label" for="password">Contraseña:</label><br>
-        <input type="password" id="password" name="password" placeholder="Contraseña" required><br><br>
-        <label class="checkbox-container">
+  <div id="loginForm">
+      <form id="formsesion"class="formulario" method="post">
+        <div class="container">
+          <a id="btnCancelar" ><img src="./images/cancelar.png" width="6%" alt="Cancelar"></a>
+        </div>
+          <h1 class="titulo">Hola, Bienvenido!</h1>
+          <hr class="hr-login">
+          <label class="label" for="gmail">Correo:</label><br>
+          <input type="email" id="gmail" name="gmail" placeholder="ejemplo@gmail.com" required><br><br>
+          <label class="label" for="password">Contraseña:</label><br>
+          <input type="password" id="password" name="password" placeholder="Contraseña" required><br><br>
+          <label class="checkbox-container">
 
-        <input type="checkbox">
-        <span class="checkbox-custom"></span>
-        Mostrar Contraseña
-    </label><br><br>
-        <input type="submit" value="Iniciar Sesión">
+          <input type="checkbox">
+          <span class="checkbox-custom"></span>
+          Mostrar Contraseña
+        </label><br><br>
+        <input type="button" id="entrarSistema" value="Iniciar Sesión">
     </form>
 </div>
 
@@ -38,7 +38,10 @@
 
 });
     </script>
+<script src="JS/jquery-3.7.1.min.js"></script>
+<script src="JS/login.js"></script>
 
+<script src="JS/sweetalert2.all.min.js"></script>
 </body>
 
 </html>

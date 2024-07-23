@@ -52,7 +52,7 @@
     background-color: #41B2A2;
 }
 
-input[type="submit"] {
+#entrarSistema{
     font-size: medium;
     margin-top: 1rem;
     color: #ffffff;
