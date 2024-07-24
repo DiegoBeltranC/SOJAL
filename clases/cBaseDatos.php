@@ -15,7 +15,7 @@
 		function __construct(){
 			$this->DB_USER = "root";
 			$this->DB_PASSWORD = "";
-			$this->DB_DATABASE = "sojal";
+			$this->DB_DATABASE = "sojal2024";
 			$this->DB_SERVER = "localhost"; //127.0.0.1
 			
 		}//Fin del constructor

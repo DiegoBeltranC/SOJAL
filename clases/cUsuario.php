@@ -147,7 +147,8 @@ class cUsuario{
             $_SESSION['nombre'] = $this->nombre;
             $fila=$resultado->fetch_row();
             $_SESSION['id_usuario'] = $fila[0];
-            $_SESSION['id_rol'] = $fila[13];
+            $_SESSION['id_rol'] = $fila[8];
+            $_SESSION['nombre'] = $fila[1];
             //Retorna un valor de 1 para indicar que se inició la sesión correctamente
             return 1;
         }

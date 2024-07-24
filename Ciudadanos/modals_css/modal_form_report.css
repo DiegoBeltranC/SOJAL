@@ -5,7 +5,7 @@
         Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     border-radius: 20px;
     background-color: rgb(255, 255, 255);
-    position: absolute;
+    position: fixed;
     width: 33rem;
     display: flex;
     justify-content: center;
@@ -66,9 +66,10 @@
     width: 100%;
    /* display: none;*/
     height: 100%;
-    position: absolute;
+    position: fixed;
     background-color: rgba(0, 0, 0, 0.256);
     display: none;
+
 }
 .form-content{
   display: grid;

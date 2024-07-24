@@ -9,6 +9,7 @@
 	if(isset($_GET['inicia_sesion'])){
         $cUsuario->setCorreo($_POST['gmail']);
         $cUsuario->setPassword($_POST['password']);
+        
         //Iniciar  sesion
         $resultado = $cUsuario->iniciarSesion();
         

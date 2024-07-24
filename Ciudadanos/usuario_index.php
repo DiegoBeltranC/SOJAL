@@ -1,3 +1,12 @@
+<?php
+  //Cargar sesion del usuario logueado
+  session_start();
+	if(!isset($_SESSION['autenticado'])){//Si no hay un usuario logueado, regresar al logueo**
+    header("Location: ../index.php");
+
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,34 +26,34 @@
         <h1 class="titulo">Generar Reporte</h1>
         <hr class="hr" />
         <div>
-        <label for="imagen" class="label">Capturar Imagen</label><br>
-        <input type="file" class="inputs-file" id="imagen" accept="image/*" capture="camera"><br>
-          <label class="label" for="tipo_reporte">Tipo de reporte: </label><br>
-          <select class="inputs" name="tipo_reporte" id="ftipo_reporte">
+        <label for="imagen-reporte"  class="label">Capturar Imagen</label><br>
+        <input type="file" class="inputs-file" id="imagen-reporte"  name="imagen-reporte" accept="image/*" capture="camera"><br>
+          <label class="label" for="selTipo-reporte">Tipo de reporte: </label><br>
+          <select class="inputs" name="selTipo-reporte" id="selTipo-reporte">
             <option value="">Bolsas</option>
             <option value="">Contenedores</option>
             <option value="">Dispercion</option>
           </select>
           <br>
-          <label class="label" for="descripcion">Descripción: </label><br>
-          <textarea class="textarea" rows="3" placeholder="Ingresa la descripción aquí"></textarea>
+          <label class="label" for="txtDescripcion">Descripción: </label><br>
+          <textarea class="textarea" rows="3" placeholder="Ingresa la descripción aquí" id="txtDescripcion" name="txtDescripcion"></textarea>
 
-          <label class="label" for="descripcion">Referencias: </label><br>
-          <textarea class="textarea" rows="3" placeholder="Ingresa las referencias aquí"></textarea>
+          <label class="label" for="txtReferencias">Referencias: </label><br>
+          <textarea class="textarea" id="txtReferencias" name="txtReferencias" rows="3" placeholder="Ingresa las referencias aquí"></textarea>
 
-          <label for="calle" class="label">Calle</label><br>
-          <input type="text" class="inputs" id="calle" placeholder="Calle" disabled>
+          <label for="txtCalle" class="label">Calle</label><br>
+          <input type="text" name="txtCalle" class="inputs" id="txtCalle" placeholder="Calle" disabled>
 
-          <label for="colonia" class="label">Colonia</label><br>
-          <input type="text" class="inputs" id="colonia" placeholder="Colonia" disabled>
+          <label for="txtColonia" class="label">Colonia</label><br>
+          <input type="text" name="txtColonia" class="inputs" id="txtColonia" placeholder="Colonia" disabled>
           
-          <label for="longitud" class="label">Longitud</label><br>
-          <input type="numbe" class="inputs" id="longitud" placeholder="Longitud" disabled>
+          <label for="txtLongitud" class="label">Longitud</label><br>
+          <input type="numbe" name="txtLongitud" class="inputs" id="txtLongitud" placeholder="Longitud" disabled>
 
-          <label for="altitud" class="label">Altitud</label><br>
-          <input type="number" class="inputs" id="altitud" placeholder="Altitud" disabled>
+          <label for="txtAltitud" class="label">Altitud</label><br>
+          <input type="number" name="txtAltitud" class="inputs" id="txtAltitud" placeholder="Altitud" disabled>
         </div>
-        <input type="submit" value="Reportar" />
+        <input type="submit" value="Reportar" id="envier-reporte" name="enviar-reporte"/>
       </form>
     </div>
   </div>
@@ -53,11 +62,11 @@
         <div class="user-container">
             <div class="user-icon-container"><img src="./icons/profile.jpg" alt=""></div>
             <div class="user-name-container">
-                <p>Jonathan Cherriz Solis</p>
+                <p><?php echo $_SESSION['nombre'];?></p>
             </div>
         </div>
         <div class="log-out-container">
-            <a href="../index.php">
+            <a href="../controladores/cerrarSesion.php">
                 <button id="log-out">Cerrar Session</button>
             </a>
         </div>
@@ -103,5 +112,6 @@
         </div>
     </div>
 <script src="./js/script.js"></script>
+<script src="js/jquery-3.7.1.min.js"></script>
 </body>
 </html>
