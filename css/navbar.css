@@ -1,0 +1,113 @@
+nav {
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 4rem;
+    display: flex;
+   
+}
+
+body {
+    margin: 0;
+}
+
+nav .left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+nav .right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+input[type='button'] {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    background-color: white;
+    height: 65%;
+    width: 9rem;
+    margin-right: 10%; /* Ajustado para el modo móvil */
+    border: 2px #41B2A2 solid;
+    color: #41B2A2;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+input[type='button']:hover {
+    background-color: #41B2A2;
+    border: 2px #41B2A2 solid;
+    color: #ffffff;
+}
+
+nav img {
+    width: 2.5rem;
+    margin-left: 20%;
+}
+
+nav h2 {
+    font-size: large;
+}
+
+nav a {
+    text-decoration: none;
+    margin-left: 2rem;
+    color: #1A1A1A;
+    font-size: 90%;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #41B2A2;
+    bottom: -15px;
+    left: 0;
+    transition: width 0.2s ease-in-out;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+    input[type='button'] {
+        margin-right: 10%;
+    }
+
+    nav img {
+        margin-left: 5%;
+    }
+}
+
+/* Modo móvil */
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column; /* Cambia a disposición vertical */
+        height: auto; /* Ajusta la altura automáticamente */
+        padding: 10px; /* Añade espacio interno */
+    }
+
+    nav .left, nav .right {
+        width: 100%; /* Ocupa todo el ancho en móvil */
+        justify-content: center; /* Centra horizontalmente */
+        margin-bottom: 10px; /* Espacio entre elementos */
+        text-align: center; /* Alinea el texto al centro */
+    }
+
+    nav img {
+        margin: 0; /* Elimina el margen en móvil */
+    }
+
+    input[type='button'] {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        margin-right: 0; /* Sin margen derecho en móvil */
+    }
+}

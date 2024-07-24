@@ -1,0 +1,12 @@
+.btn-filter{
+    background-color: #41B2A2;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.btnCancelar:hover{
+    cursor: pointer;
+}
