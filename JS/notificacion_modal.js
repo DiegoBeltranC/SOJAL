@@ -8,3 +8,4 @@ document.getElementById("btnCancelarModalNuevo").addEventListener("click", funct
     var div = document.querySelector(".contenedor");
     div.style.display = "none";
   });
+  

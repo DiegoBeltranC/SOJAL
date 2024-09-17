@@ -108,7 +108,7 @@ class cReporteCiudadano {
 
 		$response = array();
 
-
+    
 	    if ($result) {
        
     		$response["success"] = 1;
