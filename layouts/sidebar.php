@@ -99,7 +99,7 @@
               <div class="job"> <p><?php echo $_SESSION['nombre'];?></p></div>
             </div>
           </div>
-          <a href="../services/logout.php"><i class="bx bx-log-out" id="log_out"></i></a> 
+          <a href="../controllers/logout.php"><i class="bx bx-log-out" id="log_out"></i></a> 
           
         </div>
       </div>

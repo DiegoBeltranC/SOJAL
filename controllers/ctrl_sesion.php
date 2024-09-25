@@ -1,6 +1,6 @@
 <?php
 
-	include '../clases/cUsuario.php';
+	include '../class/cUsuario.php';
     //Instancia de la clase usuarios
 	$cUsuario = new cUsuario();
 	

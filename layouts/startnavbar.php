@@ -11,10 +11,9 @@
   </head>
   <body>
 
-
     <nav>
       <div class="left">
-        <img src="./images/logo.ico" alt="sojal.ico" />
+        <img src="./images/icons/logo.ico" alt="sojal.ico" />
         <h2>SOJAL</h2>
         <a href="index.php">Descripción</a>
 
@@ -27,7 +26,6 @@
       </div>
     </nav>
 
-
     <script>
         // JavaScript para manejar el evento de clic en el botón de cancelar
         document.getElementById('btnFormulario').addEventListener('click', function() {
@@ -37,7 +35,6 @@
 
         });
     </script>
-
 
   </body>
 </html>

@@ -1,67 +1,18 @@
-/*
-Método $(document).ready() de la librería jquery, se ejecuta cuando se carga completamente el documeto HTML.
+$(document).ready(function () {
+    $('#formsesion').submit(function (event) {
+        // Este evento se dispara solo si las validaciones HTML pasan
+        // Si las validaciones HTML fallan, el formulario no se enviará
 
-Para esta página, se realizan dos tareas principales: 
--Validar el formulario
--Enviar el formulario para su procesamiento
-
-Ambas tareas al hacer clic el botón enviar del formulario.
-
-*/
-$(document).ready(function(){
-    //Evento clic del button con id "entrarSistema"
-    //Al hacer clic en el botón se ejecuta la siguiente función anónima 
-    $('#entrarSistema').click(function(){
-       
-        //****** Valida los campos que no esten vacios *****
-/*
-        let campoVacio  = false;
-
-        if($('#gmail').val()==""){
-            campoVacio = true;
-        }
-
-        if($('#password').val()==""){
-            campoVacio = true;
-        }
-
-        //Si hubo algún campo vacío?
-        if(campoVacio){
-            Swal.fire({
-                title: "Faltan campos!",
-                text: "Rellena todos los campos!",
-                icon: "warning",
-                dangerMode: true
-            });
-            //Salir de la función en el evento clic del button
-            return false;
-        }*/
-        //*** Fin validar campos del formulario
-
-        //****Si los campos no estan vacios, manda los datos a un URL para procesarlo
-        //Obtiene los datos del formulario
-        let datos=$('#formsesion').serialize();
-        //Ejecuta Ajax, usando la librería jquery
+        // Ejecutar AJAX solo si las validaciones HTML son exitosas
+        let datos = $(this).serialize();
         $.ajax({
-            //Tipo de envío del formulario
-            type:"POST",
-            //Datos del formulario
-            data:datos,
-            //URL donde se envía el formulario
-            url:"controladores/ctrl_sesion.php?inicia_sesion=1",
-            //Si la respuesta del URL fue exitosa, se recibe la respuesta en "r"
-            success:function(respuesta){
-                if(respuesta==1){
-                    //Si los datos son correctos, se direcciona a la pagina principal de la pagina
-                    window.location="Ciudadanos/usuario_index.php";
-                }else if(respuesta==2){
-                    //Si los datos son correctos, se direcciona a la pagina principal de la pagina
-                    window.location="Trabajador/trabajador_index.php";
-                }else if(respuesta==3){
-                    //Si los datos son correctos, se direcciona a la pagina principal de la pagina
-                    window.location="views/estadisticas.php";
-                }else{
-                    //De lo contrario, aparece la siguiente alerta
+            type: "POST",
+            data: datos,
+            url: "controllers/ctrl_sesion.php?inicia_sesion=1",
+            success: function (respuesta) {
+                if (respuesta == 3) {
+                    window.location = "views/estadisticas.php";
+                } else {
                     Swal.fire({
                         title: "Error!",
                         text: "Usuario o contraseña incorrectos!",
@@ -70,7 +21,17 @@ $(document).ready(function(){
                     });
                 }
             }
-        }); //Termina código ajax
-    }); //Termina código evento clic
-}); //Termina método .ready()
+        });
 
+        // Prevenir el envío del formulario (por si acaso)
+        event.preventDefault();
+    });
+
+    // Muestra/oculta la contraseña
+    let ViewPassword = document.getElementById("ViewPassword");
+    let txtPassword = document.getElementById('password');
+
+    ViewPassword.addEventListener("click", function () {
+        txtPassword.type = ViewPassword.checked ? 'text' : 'password';
+    });
+});
