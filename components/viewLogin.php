@@ -24,7 +24,7 @@
                 pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$" 
                 title="Introduce un correo de Gmail válido"><br><br>
             <label class="label" for="password">Contraseña:</label><br>
-            <input type="password" id="password" name="password" placeholder="Contraseña" required><br><br>
+            <input type="password" id="password" name="password" placeholder="Contraseña" required>
             <label class="checkbox-container">
                 <input type="checkbox" id="ViewPassword">
                 <span class="checkbox-custom"></span>

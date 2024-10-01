@@ -6,75 +6,7 @@
     <title>SOJAL | Home</title>
     <link rel="icon" href="./images/icons/logo.ico" />
     <link rel="stylesheet" href="./css/navbar.css" />
-    <style>
-        body {
-            margin: 0;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-        }
-
-        /* Estilos básicos para los contenedores */
-        .contenedor-principal {
-            display: flex; 
-            justify-content: space-between; 
-            align-items: flex-start;
-        }
-
-        .contenedor-inf h1 {
-            font-size: 2.5rem;
-        }
-
-        .contenedor-inf, .img {
-            flex: 1; 
-            padding-top: 5%;
-        }
-
-        p {
-            font-size: 1.5rem;
-        }
-
-        .contenedor-inf {
-            text-align: justify;
-            padding: 5% /* Espaciado interno */
-        }
-
-        .img {
-            display: flex; 
-            justify-content: center; 
-            align-items: center;
-        }
-
-        .img img {
-            width: 70%;
-        }
-
-        @media (max-width: 1000px) { 
-          .img {
-         
-            padding-top: 25%;
-        }
-        }
-
-        @media (max-width: 700px) { 
-            .img img {
-                display: none;
-            }
-
-            .contenedor-principal {
-                display: block; 
-            }
-            p {
-            font-size: 1.3rem;
-            }
-
-            .contenedor-inf {
-          
-            padding: 1.5rem; /* Espaciado interno */
-            }
-            .contenedor-inf h1 {
-            font-size: 2rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./css/ViewHome.css" />
 </head>
 <body>
 
@@ -94,11 +26,17 @@
             los trabajadores de la basura.</p>
         </div>
         <div class="img">
-            <img src="./images/icons/logo.png" alt="Imagen descriptiva">
+            <img src="./images/RecolectorBasura.jpg" alt="Imagen descriptiva">
         </div>
     </div>
     
-    <?php include './layouts/ViewFooter.php'; ?>
+    <div class="container-cards">
+    <div class="card">Card 1</div>
+    <div class="card">Card 2</div>
+    <div class="card">Card 3</div>
+    <div class="card">Card 4</div>
+</div>
+   
     <!-- <div id="overlay"></div> -->
       
 </body>

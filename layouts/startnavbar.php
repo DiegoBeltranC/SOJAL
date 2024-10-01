@@ -15,9 +15,9 @@
       <div class="left">
         <img src="./images/icons/logo.ico" alt="sojal.ico" />
         <h2>SOJAL</h2>
-        <a href="index.php">Descripción</a>
+        <a href="index.php">Inicio</a>
 
-        <a href="quienesSomos.php">¿Quienes somos?</a>
+        <a href="quienesSomos.php">¿Quiénes somos?</a>
 
         <a href="descargarApp.php">Descargar App</a>
       </div>
