@@ -11,7 +11,7 @@ $(document).ready(function () {
             url: "controllers/ctrl_sesion.php?inicia_sesion=1",
             success: function (respuesta) {
                 if (respuesta == 3) {
-                    window.location = "views/estadisticas.php";
+                    window.location = "views/ViewEstadisticas.php";
                 } else {
                     Swal.fire({
                         title: "Error!",

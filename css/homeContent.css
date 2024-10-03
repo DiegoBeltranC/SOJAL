@@ -5,6 +5,7 @@
     height: 100%;
     width: calc(100% - 240px);
     left: 240px;
+    background-color: #0056b3;
 }
 
 .home_content .text{
