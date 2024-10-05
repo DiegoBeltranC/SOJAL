@@ -15,7 +15,6 @@
   <title>Estadísticas</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <link rel="stylesheet" href="../css/ViewEstadisticas.css">
-  <link rel="stylesheet" href="../css/PageNavBar.css">
   <link rel="stylesheet" href="../css/Page.css">
 </head>
 <body>

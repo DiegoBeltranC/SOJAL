@@ -71,11 +71,8 @@ $current_page = basename($_SERVER['PHP_SELF']);
 
 <style>
   .option.active {
-    background-color: #41B2A2; 
+    background-color: #26776d; 
     color: white; 
-  }
-  .option.active .mi-svg {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) brightness(100%) contrast(100%);
   }
 </style>
 

@@ -14,11 +14,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" href="../images/icons-page/ruta.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/PageNavBar.css">
     <link rel="stylesheet" href="../css/Page.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <style>
-        #map { height: 70%; width: 100%; }
+        #map { height: 70%; width: 100%; z-index: 1; }
     </style>
     <title>Trayectos</title>
 </head>

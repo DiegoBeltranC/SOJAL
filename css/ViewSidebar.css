@@ -5,12 +5,13 @@ body {
 }
 
 .sidebar {
-    top: 8%;
+    top: 3.5rem;
     position: fixed;
     width: 20%;
-    height: 92%;
-    background-color: #EAF3F2;
+    height: 93%;
+    background-color: #41B2A2;
     transition: width 0.3s ease; /* Añade transición al ancho */
+    z-index: 3;
 }
 
 
@@ -19,6 +20,7 @@ body {
 ol {
     list-style: none;
     padding: 0px;
+    margin: 0px;
 }
 
 .option {
@@ -26,32 +28,32 @@ ol {
     height: 3rem;
    display: flex; /* Activa Flexbox */
    align-items: center; /* Centra verticalmente */
+   transition: background-color 0.3s ease;
 }
 
 .option:hover {
-    background-color: #41B2A2;
+    background-color: #26776d;
     color: white;
     
 }
 a {
     text-decoration: none;
     font-size: 90%;
-   color: #5E5E5E;
+   color: #ffffff;
 }
 
-
+.title {
+    color: rgb(0, 0, 0);
+}
 
 .option img {
     margin-left: 8%;
     margin-right: 5%;
  
     width: 8%;
-    filter: brightness(0) saturate(100%) invert(38%) sepia(3%) saturate(7%) hue-rotate(314deg) brightness(90%) contrast(85%);
-}
-
-.option:hover img {
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) brightness(100%) contrast(100%);
 }
+
 
 
 .sidebar.active {

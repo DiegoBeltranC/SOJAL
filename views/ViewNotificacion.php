@@ -15,7 +15,6 @@
   <title>Notificaciones</title>
   <link rel="stylesheet" href="../css/ViewNotifiacion.css">
   <link rel="stylesheet" href="../css/Page.css">
-  <link rel="stylesheet" href="../css/PageNavBar.css">
   <link rel="stylesheet" href="../css/buttons.css">
 
 </head>

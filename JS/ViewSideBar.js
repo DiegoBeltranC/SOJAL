@@ -32,3 +32,16 @@ document.getElementById("menu-toggle").addEventListener("click", function () {
         content.classList.remove('active'); // Quita la clase 'active' del contenido
     }
 });
+
+let isActiveProfile = false;
+const profile = document.querySelector('.profile-content');
+
+document.getElementById("photo").addEventListener("click", function () {
+    isActiveProfile = !isActiveProfile; // Cambia el estado
+    
+    if (isActiveProfile) {
+        profile.classList.add('active'); 
+    } else {
+        profile.classList.remove('active'); 
+    }
+});
