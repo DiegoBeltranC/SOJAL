@@ -9,7 +9,7 @@
     width: 80%; /* Opción: Se puede dejar así, o quitar para que ocupe el espacio restante */
     padding: 20px; /* Espaciado interno del contenido */
     height: 100vh; /* Opcional: Para que el contenido ocupe toda la altura de la ventana */
-   
+    margin-top: 2%;
     transition: margin-left 0.3s ease, width 0.3s ease; /* Transiciones para margen, ancho y color de fondo */
 }
 

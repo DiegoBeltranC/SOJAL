@@ -5,12 +5,16 @@ body {
 }
 
 .sidebar {
+    top: 8%;
     position: fixed;
     width: 20%;
-    height: 100%;
+    height: 92%;
     background-color: #EAF3F2;
     transition: width 0.3s ease; /* Añade transición al ancho */
 }
+
+
+
 
 ol {
     list-style: none;
@@ -49,43 +53,6 @@ a {
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) brightness(100%) contrast(100%);
 }
 
-.header {
-    margin-top: 0.5rem;
-    width: 100%; /* Asegura que el header ocupe todo el ancho */
-    height: 2rem;
-    position: relative; /* Para posicionar elementos flotantes */
-}
-
-.logo {
-    width: 12%;
-    margin-left: 5%;
-    float: left; /* Flota a la izquierda */
-}
-
-.title {
-    margin: 0; /* Elimina el margen por defecto */
-    margin-top: 2.5%;
-    font-size: 100%;
-    float: left; /* Flota a la izquierda junto al logo */
-}
-
-.menu-icon {
-    width: 10%;
-    float: right; /* Flota a la derecha */
-    margin-right: 5%;
-    cursor: pointer;
-    filter: brightness(0) saturate(100%) invert(38%) sepia(3%) saturate(7%) hue-rotate(314deg) brightness(90%) contrast(85%);
-}
-
-.sidebar.active .header {
-  display: flex; 
-  align-items: center;
-  justify-content: center;
-}
-.sidebar.active .menu-icon {
-  width: 40%;
-  }
-  
 
 .sidebar.active {
     width: 5%;
@@ -109,14 +76,6 @@ a {
     transform: scale(0.75); /* Reduce el tamaño de la imagen */
     transition: transform 0.3s ease; /* Transición para el escalado */
 }
-
-.sidebar.active .header .logo {
-    display: none;
-}
-.sidebar.active .header .title {
-    display: none;
-}
-
 
 
 @media (max-width: 768px) {

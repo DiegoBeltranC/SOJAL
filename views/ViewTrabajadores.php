@@ -11,10 +11,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/icons-page/trabajadores.png" />
+    <link rel="stylesheet" href="../css/PageNavBar.css">
     <link rel="stylesheet" href="../css/Page.css">
     <title>Trabajadores</title>
 </head>
 <body>
+<?php include '../layouts/NavBar.php';?>
 <div class="home-container">
     <!-- SideBar-->
 <?php include '../layouts/sidebar.php';?>

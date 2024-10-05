@@ -14,11 +14,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
 
 
 <div class="sidebar">
-  <div class="header">
-    <img class="logo" src="../images/icons/logo.png" alt="Logo"/>
-    <h3 class="title">SOJAL</h3>
-    <img class="menu-icon" src="../images/icons/menu.png" alt="Menu Icon" id="menu-toggle"/>
-  </div>
+
 
   <ol>
     <a href="ViewEstadisticas.php">
@@ -70,6 +66,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
       </li>
     </a>
   </ol>
+
 </div>
 
 <style>
