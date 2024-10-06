@@ -36,12 +36,23 @@ document.getElementById("menu-toggle").addEventListener("click", function () {
 let isActiveProfile = false;
 const profile = document.querySelector('.profile-content');
 
-document.getElementById("photo").addEventListener("click", function () {
+document.getElementById("photo").addEventListener("click", function (event) {
     isActiveProfile = !isActiveProfile; // Cambia el estado
     
     if (isActiveProfile) {
         profile.classList.add('active'); 
     } else {
         profile.classList.remove('active'); 
+    }
+
+    event.stopPropagation(); // Evita que el clic se propague al documento
+});
+
+// Agregamos el evento de clic al documento
+document.addEventListener("click", function(event) {
+    // Verifica si el clic fue fuera del contenedor profile
+    if (isActiveProfile && !profile.contains(event.target)) {
+        isActiveProfile = false;
+        profile.classList.remove('active');
     }
 });

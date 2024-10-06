@@ -32,7 +32,7 @@
             </label><br><br>
 
             <button type="submit" id="entrarSistema">Iniciar Sesión</button>
-            <a class="RecoverPassword" href="/sojal/views/RecoverPassword/ViewRecoverPassword.php">Olvide mi contraseña</a>
+            <a class="RecoverPassword" href="/sojal/views/RecoverPassword/ViewRecoverPassword.html">Olvide mi contraseña</a>
         </form>
     </div>
 </div>
