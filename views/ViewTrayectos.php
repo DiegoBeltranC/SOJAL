@@ -80,6 +80,6 @@
             map.fitBounds(routeLayer.getBounds());
         }
     </script>
-<script src="../js/ViewSideBar.js"></script>
+<script src="../JS/ViewSideBar.js"></script>
 </body>
 </html>

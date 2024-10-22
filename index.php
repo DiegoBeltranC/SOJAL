@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <?php include './components/ViewLogin.php'; ?>
+    <?php include './components/viewLogin.php'; ?>
     <?php include './layouts/startnavbar.php'; ?>
 
     <div class="contenedor-principal">

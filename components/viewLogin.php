@@ -43,8 +43,8 @@
         div.style.display = 'none';
     });
 </script>
-<script src="js/jquery-3.7.1.min.js"></script>
-<script src="js/login.js"></script>
-<script src="js/sweetalert2.all.min.js"></script>
+<script src="JS/jquery-3.7.1.min.js"></script>
+<script src="JS/login.js"></script>
+<script src="JS/sweetalert2.all.min.js"></script>
 </body>
 </html>

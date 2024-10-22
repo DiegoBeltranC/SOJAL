@@ -8,8 +8,8 @@
 </head>
 <body>
     <div class="navbar-content">
-    <img class="menu-icon" src="../images/icons/menu.png" alt="Menu Icon" id="menu-toggle"/>
-    <img class="logo" src="../images/icons/logo.png" alt="Logo"/>
+    <img class="menu-icon" src="../images/Icons/menu.png" alt="Menu Icon" id="menu-toggle"/>
+    <img class="logo" src="../images/Icons/logo.png" alt="Logo"/>
     <h2 class="title">SOJAL</h2>
     <img class="notification" src="../images/Icons/notification.svg" alt="Perfil" id="notification"/>
     <img class="photo" src="../package/image/photos/UserMarcy.jpg" alt="Perfil" id="photo"/>

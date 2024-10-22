@@ -13,7 +13,7 @@
 
     <nav>
       <div class="left">
-        <img src="./images/icons/logo.png" alt="sojal.ico" />
+        <img src="./images/Icons/logo.png" alt="sojal.ico" />
         <h2>SOJAL</h2>
         <a href="index.php">Inicio</a>
 
