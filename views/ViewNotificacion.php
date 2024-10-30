@@ -13,9 +13,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="../images/icons-page/correo-electronico.png" />
   <title>Notificaciones</title>
-  <link rel="stylesheet" href="../css/ViewNotifiacion.css">
+
   <link rel="stylesheet" href="../css/Page.css">
   <link rel="stylesheet" href="../css/buttons.css">
+  <link rel="stylesheet" href="../css/ViewNotifiacion.css">
 
 </head>
 <body>
@@ -30,7 +31,7 @@
     <div class="content-button">
       <h2>NOTIFICACIONES</h2>
       <button class="add">
-      <span class="button-text">Agregar</span>
+      <span class="button-text" id="Agregar-Notificacion">Agregar</span>
      <img src="../images/icons/boton-mas.svg" alt="Icono" class="button-icon">
     </button>
 

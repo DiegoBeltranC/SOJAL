@@ -22,8 +22,12 @@
         <p>correo@gmail.com</p>
         <hr>
         </div>
+        
         <button class="settings">Configuración</button>
+           <a href="../controllers/logout.php" id="a">
+
         <button class="button-red">Cerrar sesión</button>
+        </a>
     </div>
 </body>
 </html>

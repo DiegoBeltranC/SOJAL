@@ -1,10 +1,20 @@
-.container-graph {
-    width: 30%;
-    height: 40%;
-}
 
 @media (max-width: 768px) {
     .container-graph {
         width: 90%;
     }
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px; /* Espacio entre los gráficos */
+    margin: 10px; /* Espacio alrededor del contenedor */
+}
+
+.container-graph {
+    width: 80%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
 }

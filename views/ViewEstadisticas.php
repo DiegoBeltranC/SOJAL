@@ -18,71 +18,99 @@
   <link rel="stylesheet" href="../css/Page.css">
 </head>
 <body>
-<?php include '../layouts/NavBar.php';?>
-  <!-- Contenedor-->
-  <div class="home-container">
+<?php include '../layouts/NavBar.php'; ?>
+<!-- Contenedor-->
+<div class="home-container">
     <!-- SideBar-->
-    <?php include '../layouts/sidebar.php';?>
+    <?php include '../layouts/sidebar.php'; ?>
     
     <!-- Contenido-->
     <div class="content">
-      <h2>ESTADÍSTICAS</h2>
-      <div>
-                <label>
-                    <input type="radio" name="chartType" value="pie" checked onchange="changeChartType()"> Gráfico de Pastel
-                </label>
-                <label>
-                    <input type="radio" name="chartType" value="bar" onchange="changeChartType()"> Gráfico de Barras
-                </label>
-            </div>
+        <h2>ESTADÍSTICAS</h2>
+        
+        <div class="grid-container">
+            <!-- Gráfico 1 -->
             <div class="container-graph">
-                <canvas id="myChart"></canvas>
+                <h3>Gráfico 1</h3>
+                <canvas id="myChart1"></canvas>
             </div>
+            
+            <!-- Gráfico 2 -->
+            <div class="container-graph">
+                <h3>Gráfico 2</h3>
+                <canvas id="myChart2"></canvas>
+            </div>
+            
+            <!-- Gráfico 3 -->
+            <div class="container-graph">
+                <h3>Gráfico 3</h3>
+                <canvas id="myChart3"></canvas>
+            </div>
+            
+            <!-- Gráfico 4 -->
+            <div class="container-graph">
+                <h3>Gráfico 4</h3>
+                <canvas id="myChart4"></canvas>
+            </div>
+        </div>
     </div>
-  </div>
-  <script>
-        const ctx = document.getElementById('myChart').getContext('2d');
-        let myChart;
+</div>
 
-        function createChart(type) {
-            const data = {
-                labels: ['Rojo', 'Azul', 'Verde'],
+<script>
+    const chartsData = [
+        {
+            labels: ['Rojo', 'Azul', 'Verde'],
+            data: [10, 40, 50],
+            backgroundColor: ['red', 'blue', 'green']
+        },
+        {
+            labels: ['Amarillo', 'Naranja', 'Púrpura'],
+            data: [30, 20, 15],
+            backgroundColor: ['yellow', 'orange', 'purple']
+        },
+        {
+            labels: ['Cyan', 'Magenta', 'Negro'],
+            data: [25, 10, 5],
+            backgroundColor: ['cyan', 'magenta', 'black']
+        },
+        {
+            labels: ['Gris', 'Brown', 'Beige'],
+            data: [15, 35, 20],
+            backgroundColor: ['grey', 'brown', 'beige']
+        }
+    ];
+
+    function createChart(canvasId, chartData) {
+        const ctx = document.getElementById(canvasId).getContext('2d');
+        return new Chart(ctx, {
+            type: 'pie', // Puedes cambiar a 'bar' si lo deseas
+            data: {
+                labels: chartData.labels,
                 datasets: [{
                     label: 'Distribución',
-                    data: [10, 40, 50],
-                    backgroundColor: type === 'pie' ? ['red', 'blue', 'green'] : ['rgba(255, 99, 132, 0.2)', 'rgba(54, 162, 235, 0.2)', 'rgba(75, 192, 192, 0.2)'],
-                    borderColor: type === 'pie' ? [] : ['rgba(255, 99, 132, 1)', 'rgba(54, 162, 235, 1)', 'rgba(75, 192, 192, 1)'],
-                    borderWidth: type === 'bar' ? 1 : 0,
+                    data: chartData.data,
+                    backgroundColor: chartData.backgroundColor,
+                    borderColor: chartData.backgroundColor.map(color => color.replace('0.2', '1')), // Ajustar borde
+                    borderWidth: 1,
                 }]
-            };
-
-            if (myChart) {
-                myChart.destroy(); // Destruir el gráfico existente
-            }
-
-            myChart = new Chart(ctx, {
-                type: type,
-                data: data,
-                options: {
-                    responsive: true,
-                    plugins: {
-                        legend: {
-                            position: 'top',
-                        },
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
                     },
-                }
-            });
-        }
+                },
+            }
+        });
+    }
 
-        function changeChartType() {
-            const chartType = document.querySelector('input[name="chartType"]:checked').value;
-            createChart(chartType);
-        }
+    // Crear los gráficos
+    chartsData.forEach((chartData, index) => {
+        createChart(`myChart${index + 1}`, chartData);
+    });
+</script>
 
-        // Crear el gráfico inicial
-        createChart('pie');
-    </script>
-
-  <script src="../js/ViewSideBar.js"></script>
+<script src="../js/ViewSideBar.js"></script>
 </body>
 </html>

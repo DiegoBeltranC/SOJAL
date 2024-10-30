@@ -19,6 +19,14 @@
   margin-bottom: 0px;
 }
 
+.add {
+    width: 10rem;
+}
+
+.button-icon {
+    height: 70%;
+}
+
 .card {
     background-color: #fff;
     border-radius: 10px;
@@ -49,3 +57,4 @@
 h2 {
     text-align: center;
 }
+
