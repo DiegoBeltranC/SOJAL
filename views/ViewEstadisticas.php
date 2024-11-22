@@ -14,8 +14,10 @@
   <link rel="icon" href="../images/icons-page/GraficoCircular.png" />
   <title>Estadísticas</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <link rel="stylesheet" href="../css/ViewEstadisticas.css">
+
   <link rel="stylesheet" href="../css/Page.css">
+  <link rel="stylesheet" href="../css/ViewEstadisticas.css">
+
 </head>
 <body>
 <?php include '../layouts/NavBar.php'; ?>
@@ -25,9 +27,22 @@
     <?php include '../layouts/sidebar.php'; ?>
     
     <!-- Contenido-->
-    <div class="content">
+    <div class="content" id="content">
         <h2>ESTADÍSTICAS</h2>
-        
+        <div class="content-data">
+              <div class="data espera">
+                <h3>En Espera</h3>
+                <p>100</p>
+             </div>
+             <div class="data progreso">
+                <h3>En Proceso</h3>
+                <p>70</p>
+            </div>
+             <div class="data finalizado">
+                 <h3>Finalizados</h3>
+                 <p>50</p>
+             </div>
+        </div>
         <div class="grid-container">
             <!-- Gráfico 1 -->
             <div class="container-graph">
@@ -61,22 +76,22 @@
         {
             labels: ['Rojo', 'Azul', 'Verde'],
             data: [10, 40, 50],
-            backgroundColor: ['red', 'blue', 'green']
+            backgroundColor: ['#ec7063', '#a9cce3', '#7dcea0']
         },
         {
             labels: ['Amarillo', 'Naranja', 'Púrpura'],
             data: [30, 20, 15],
-            backgroundColor: ['yellow', 'orange', 'purple']
+            backgroundColor: ['#1abc9c', '#5499c7', '#a569bd']
         },
         {
             labels: ['Cyan', 'Magenta', 'Negro'],
             data: [25, 10, 5],
-            backgroundColor: ['cyan', 'magenta', 'black']
+            backgroundColor: ['#45b39d', '#ec7063', '#f5b041']
         },
         {
             labels: ['Gris', 'Brown', 'Beige'],
             data: [15, 35, 20],
-            backgroundColor: ['grey', 'brown', 'beige']
+            backgroundColor: ['#ec7063', '#f39c12', '#48c9b0']
         }
     ];
 

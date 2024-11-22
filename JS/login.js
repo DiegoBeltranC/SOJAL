@@ -8,9 +8,9 @@ $(document).ready(function () {
         $.ajax({
             type: "POST",
             data: datos,
-            url: "controllers/ctrl_sesion.php?inicia_sesion=1",
+            url: "controllers/ctrl_sesion.php",
             success: function (respuesta) {
-                if (respuesta == 3) {
+                if (respuesta == true) {
                     window.location = "views/ViewEstadisticas.php";
                 } else {
                     Swal.fire({

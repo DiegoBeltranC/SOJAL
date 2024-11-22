@@ -17,7 +17,12 @@
   <link rel="stylesheet" href="../css/Page.css">
   <link rel="stylesheet" href="../css/buttons.css">
   <link rel="stylesheet" href="../css/ViewNotifiacion.css">
-
+ <style>
+  #content {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+ </style>
 </head>
 <body>
 <?php include '../layouts/NavBar.php';?>
@@ -27,7 +32,7 @@
     <?php include '../layouts/sidebar.php';?>
     
     <!-- Contenido-->
-    <div class="content">
+    <div class="content" id="content">
     <div class="content-button">
       <h2>NOTIFICACIONES</h2>
       <button class="add">
@@ -38,32 +43,72 @@
       </div>
       <div class="container-cards">
     <div class="card">
-        <img src="../images/RecolectorBasura.jpg" alt="Descripción de la imagen 1">
-        <h2>Título 1</h2>
-        <p><strong>Fecha de publicación:</strong> 01/01/2024</p>
-        <p><strong>Fecha de expiración:</strong> 01/02/2024</p>
-        <p>@Jonathan Cherriz</p>
+        <img src="../images/RecolectorBasura.jpg" alt="Imagen de la noticia" class="news-image">
+        <div class="card-content">
+            <h2>Título de la Noticia</h2>
+            <p class="mini-description">Esta es una breve descripción de la noticia que explica de qué trata.</p>
+            <div class="dates">
+                <p class="start-date">01/01/2024</p>
+                <p class="end-date">07/01/2024</p>
+            </div>
+            <div class="creator-info">
+                <img src="../package/image/photos/UserHunter.jpg" alt="Imagen de perfil" class="profile-image">
+                <p>Jonathan Cherriz</p>
+            </div>
+            <div class="news-footer">
+                <span class="likes">120 Likes</span>
+                <div class="actions">
+                    <button class="edit-btn">Editar</button>
+                    <button class="details-btn">Ver Más</button>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="card">
-        <img src="../images/RecolectorBasura.jpg" alt="Descripción de la imagen 2">
-        <h2>Título 2</h2>
-        <p><strong>Fecha de publicación:</strong> 02/01/2024</p>
-        <p><strong>Fecha de expiración:</strong> 02/02/2024</p>
-        <p>@Jonathan Cherriz</p>
+        <img src="../images/RecolectorBasura.jpg" alt="Imagen de la noticia" class="news-image">
+        <div class="card-content">
+            <h2>Título de la Noticia</h2>
+            <p class="mini-description">Esta es una breve descripción de la noticia que explica de qué trata.</p>
+            <div class="dates">
+                <p class="start-date">01/01/2024</p>
+                <p class="end-date">07/01/2024</p>
+            </div>
+            <div class="creator-info">
+                <img src="../package/image/photos/UserHunter.jpg" alt="Imagen de perfil" class="profile-image">
+                <p>Jonathan Cherriz</p>
+            </div>
+            <div class="news-footer">
+                <span class="likes">120 Likes</span>
+                <div class="actions">
+                    <button class="edit-btn">Editar</button>
+                    <button class="details-btn">Ver Más</button>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="card">
-        <img src="../images/RecolectorBasura.jpg" alt="Descripción de la imagen 3">
-        <h2>Título 3</h2>
-        <p><strong>Fecha de publicación:</strong> 03/01/2024</p>
-        <p><strong>Fecha de expiración:</strong> 03/02/2024</p>
-        <p>@Jonathan Cherriz</p>
+        <img src="../images/RecolectorBasura.jpg" alt="Imagen de la noticia" class="news-image">
+        <div class="card-content">
+            <h2>Título de la Noticia</h2>
+            <p class="mini-description">Esta es una breve descripción de la noticia que explica de qué trata.</p>
+            <div class="dates">
+                <p class="start-date">01/01/2024</p>
+                <p class="end-date">07/01/2024</p>
+            </div>
+            <div class="creator-info">
+                <img src="../package/image/photos/UserHunter.jpg" alt="Imagen de perfil" class="profile-image">
+                <p>Jonathan Cherriz</p>
+            </div>
+            <div class="news-footer">
+                <span class="likes">120 Likes</span>
+                <div class="actions">
+                    <button class="edit-btn">Editar</button>
+                    <button class="details-btn">Ver Más</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="card">
-        <img src="../images/RecolectorBasura.jpg" alt="Descripción de la imagen 4">
-        <h2>Título 4</h2>
-        <p><strong>Fecha de publicación:</strong> 04/01/2024</p>
-        <p><strong>Fecha de expiración:</strong> 04/02/2024</p>
-        <p>@Jonathan Cherriz</p>
+</div>
     </div>
 </div>
 

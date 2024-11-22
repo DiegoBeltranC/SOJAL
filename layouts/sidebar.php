@@ -47,6 +47,12 @@ $current_page = basename($_SERVER['PHP_SELF']);
         <p>Usuarios</p>
       </li>
     </a>
+    <a href="#">
+      <li class="option">
+        <img class="mi-svg" src="../images/icons/conjunto-de-habilidades.svg" alt="Mi SVG feliz"/>
+        <p>Asignación</p>
+      </li>
+    </a>
     <a href="ViewTrabajadores.php">
       <li class="option <?php echo $current_page == 'ViewTrabajadores.php' ? 'active' : ''; ?>">
         <img class="mi-svg" src="../images/icons/trabajador.svg" alt="Mi SVG feliz"/>

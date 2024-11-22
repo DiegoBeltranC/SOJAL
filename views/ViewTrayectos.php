@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../css/Page.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <style>
-        #map { height: 70%; width: 100%; z-index: 1; }
+        #map { height: 30rem; width: 100%; z-index: 1; }
     </style>
     <title>Trayectos</title>
 </head>

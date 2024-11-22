@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/buttons.css" />
+
     <link rel="stylesheet" href="../css/PageNavBar.css">
+    <link rel="stylesheet" href="../css/buttons.css">
 </head>
 <body>
     <div class="navbar-content">
@@ -23,8 +24,8 @@
         <hr>
         </div>
         
-        <button class="settings">Configuración</button>
-           <a href="../controllers/logout.php" id="a">
+        <a href="ViewSettings.php" class="enlace-button"> <button class="settings">Configuración</button> </a>
+           <a href="../controllers/logout.php" class="enlace-button">
 
         <button class="button-red">Cerrar sesión</button>
         </a>
