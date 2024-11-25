@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/ViewLogin.css" />
+    <link rel="stylesheet" href="./css/sweetalert2.min.css" />
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/sweetalert2.all.js"></script>
+
 </head>
 <body>
 <div class="body">
@@ -18,10 +22,10 @@
             <input 
                 type="email" 
                 id="gmail" 
-                name="gmail" 
+                name="correo" 
                 placeholder="ejemplo@gmail.com" 
                 required 
-                pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$" 
+                pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$"
                 title="Introduce un correo de Gmail válido"><br><br>
             <label class="label" for="password">Contraseña:</label><br>
             <input type="password" id="password" name="password" placeholder="Contraseña" required>
@@ -36,15 +40,9 @@
         </form>
     </div>
 </div>
-<script>
-    // JavaScript para manejar el evento de clic en el botón de cancelar
-    document.getElementById('btnCancelar').addEventListener('click', function() {
-        var div = document.querySelector('.body');
-        div.style.display = 'none';
-    });
-</script>
-<script src="js/jquery-3.7.1.min.js"></script>
-<script src="js/login.js"></script>
-<script src="js/sweetalert2.all.min.js"></script>
+
+
+<script src="js/login.js" ></script>
+
 </body>
 </html>

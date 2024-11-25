@@ -1,3 +1,7 @@
+<?php
+  session_start(); 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,14 +17,14 @@
     <img class="logo" src="../images/icons/logo.png" alt="Logo"/>
     <h2 class="title">SOJAL</h2>
     <img class="notification" src="../images/Icons/notification.svg" alt="Perfil" id="notification"/>
-    <img class="photo" src="../package/image/photos/UserMarcy.jpg" alt="Perfil" id="photo"/>
+    <img class="photo" src="<?= $_SESSION['perfil']; ?>" alt="Perfil" id="photo"/>
     </div>
 
     <div class="profile-content">
-        <img class="photo-profile" src="../package/image/photos/UserMarcy.jpg" alt="Perfil"/>
+        <img class="photo-profile" src="<?= $_SESSION['perfil']; ?>" alt="Perfil"/>
         <div class="content-info">
-        <strong>Jonathan Alexis Cherriz Solis</strong>
-        <p>correo@gmail.com</p>
+        <strong><?= $_SESSION['usuario']; ?></strong>
+        <p><?= $_SESSION['correo']; ?></p>
         <hr>
         </div>
         

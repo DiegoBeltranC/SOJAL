@@ -1,12 +1,10 @@
 <?php
-  //Cargar sesion del usuario logueado
   session_start();
-	if(!isset($_SESSION['autenticado'])){//Si no hay un usuario logueado, regresar al logueo**
+	if(isset($_SESSION['autenticado']) && $_SESSION['autenticado'] === 1){
     header("Location: ../index.php");
-
   }
-  
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

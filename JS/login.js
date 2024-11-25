@@ -1,37 +1,49 @@
-$(document).ready(function () {
-    $('#formsesion').submit(function (event) {
-        // Este evento se dispara solo si las validaciones HTML pasan
-        // Si las validaciones HTML fallan, el formulario no se enviará
 
-        // Ejecutar AJAX solo si las validaciones HTML son exitosas
-        let datos = $(this).serialize();
+// JavaScript para manejar el evento de clic en el botón de cancelar
+document.getElementById('btnCancelar').addEventListener('click', function () {
+    var div = document.querySelector('.body');
+    div.style.display = 'none';
+});
+
+$(document).ready(function () {
+    $('#formsesion').on('submit', function (event) {
+
+        event.preventDefault();
+
+        var correo = $('#gmail').val();
+        var password = $('#password').val();
+
         $.ajax({
-            type: "POST",
-            data: datos,
             url: "controllers/ctrl_sesion.php",
+            type: "POST",
+            data: {
+                correo: correo,
+                password: password
+            },
             success: function (respuesta) {
-                if (respuesta == true) {
-                    window.location = "views/ViewEstadisticas.php";
-                } else {
+                if (respuesta == 1) {
+                    window.location.href = "views/ViewEstadisticas.php"
+                }
+                else {
                     Swal.fire({
                         title: "Error!",
                         text: "Usuario o contraseña incorrectos!",
                         icon: "warning",
-                        dangerMode: true
+                        dangerMode: true,
+        
                     });
                 }
             }
         });
 
-        // Prevenir el envío del formulario (por si acaso)
-        event.preventDefault();
     });
 
-    // Muestra/oculta la contraseña
+
     let ViewPassword = document.getElementById("ViewPassword");
     let txtPassword = document.getElementById('password');
 
     ViewPassword.addEventListener("click", function () {
+
         txtPassword.type = ViewPassword.checked ? 'text' : 'password';
     });
 });

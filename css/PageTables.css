@@ -7,7 +7,7 @@
 
     /* Encabezado de la tabla */
     th {
-        background-color: #4CAF50;
+        background-color: #4c59af;
         color: white;
         padding: 10px;
         text-align: left;
@@ -45,7 +45,9 @@
     .dataTables_filter {
         float: left;
         text-align: right;
-        margin-bottom: 10px;
+        margin-right: 10px;
+        margin-top: 5px;
+
     }
 
     .dataTables_filter label {
@@ -69,7 +71,7 @@
     .dataTables_paginate .paginate_button {
         padding: 6px 12px;
         margin: 0 3px;
-        background-color: #4CAF50;
+        background-color: #4c59af;
         color: white;
         border-radius: 4px;
         border: none;
@@ -77,7 +79,7 @@
     }
 
     .dataTables_paginate .paginate_button:hover {
-        background-color: #45a049;
+        background-color: #6c7bdb;
     }
 
     .dataTables_paginate .paginate_button:disabled {
@@ -204,3 +206,14 @@
             padding: 6px 10px;
         }
     }
+
+    .add-form {
+        margin-bottom: 10px;
+        padding: 10px;
+        background-color: #4caf4c;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }

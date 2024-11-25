@@ -1,10 +1,10 @@
 <?php
-  //Cargar sesion del usuario logueado
   session_start();
-	if(!isset($_SESSION['autenticado'])){//Si no hay un usuario logueado, regresar al logueo**
+	if(isset($_SESSION['autenticado']) && $_SESSION['autenticado'] === 1){
     header("Location: ../index.php");
   }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -150,7 +150,7 @@
            
         </div>
         <div class="profile-section">
-            <img src="../package/image/photos/UserMarcy.jpg" alt="Foto de Perfil">
+            <img src="<?= $_SESSION['perfil']; ?>" alt="Foto de Perfil">
             <div class="profile-info">
                 <label for="nombre">Nombre</label>
                 <input type="text" id="nombre" value="Jonathan" disabled>
