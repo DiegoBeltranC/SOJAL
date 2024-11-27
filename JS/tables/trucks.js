@@ -61,11 +61,6 @@ $(function () {
 });
 
 
-// Buscador personalizado
-$('#searchInput').on('keyup', function () {
-    $('#data-table').DataTable().search(this.value).draw();
-});
-
 function ver(id) {
     alert(`Ver detalles del trabajador con ID ${id}`);
 }

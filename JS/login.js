@@ -12,7 +12,7 @@ $(document).ready(function () {
 
         var correo = $('#gmail').val();
         var password = $('#password').val();
-
+        $('#loading').show(); 
         $.ajax({
             url: "controllers/ctrl_sesion.php",
             type: "POST",
@@ -22,9 +22,11 @@ $(document).ready(function () {
             },
             success: function (respuesta) {
                 if (respuesta == 1) {
+                    $('#loading').hide();
                     window.location.href = "views/ViewEstadisticas.php"
                 }
                 else {
+                    $('#loading').hide();
                     Swal.fire({
                         title: "Error!",
                         text: "Usuario o contraseña incorrectos!",

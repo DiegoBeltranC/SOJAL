@@ -40,6 +40,7 @@
         </form>
     </div>
 </div>
+<?php include 'components/cargando.php';?>
 
 
 <script src="js/login.js" ></script>

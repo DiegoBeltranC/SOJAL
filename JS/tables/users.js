@@ -50,6 +50,8 @@ function editar(id) {
     alert(`Editar trabajador con ID ${id}`);
 }
 
+
+
 function eliminar(id) {
     Swal.fire({
         title: '¿Estás seguro?',
