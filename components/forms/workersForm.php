@@ -72,6 +72,7 @@
                         pattern="[A-Z]{4}[0-9]{6}[A-Z0-9]{3}"
                         title="Ingresa un RFC válido en mayúsculas, por ejemplo, ABCD123456XXX" >
                 </div>
+
                 <input type="hidden" name="opcion" value="1">
                 <input type="hidden" name="rol" value="2">
                 <button type="button" onclick="add()" class="register">Registrar</button>

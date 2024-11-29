@@ -56,6 +56,8 @@
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 <?php include '../components/forms/administratorsForm.php';?>
+<?php include '../components/view/admidInfo.php';?>
+<?php include '../components/edit/administratorsEdit.php';?>
 <script src="../js/ViewSideBar.js"></script>
 
 </body>

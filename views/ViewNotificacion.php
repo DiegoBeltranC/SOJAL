@@ -36,7 +36,7 @@
       <h2>NOTIFICACIONES</h2>
       <button class="add">
       <span class="button-text" id="Agregar-Notificacion">Agregar</span>
-     <img src="../images/icons/boton-mas.svg" alt="Icono" class="button-icon">
+     <img src="../images/Icons/boton-mas.svg" alt="Icono" class="button-icon">
     </button>
 
       </div>

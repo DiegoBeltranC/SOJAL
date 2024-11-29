@@ -13,13 +13,12 @@
 
     <nav>
       <div class="left">
-        <img src="./images/icons/logo.png" alt="sojal.ico" />
+        <img src="./images/Icons/logo.png" alt="sojal.ico" />
         <h2>SOJAL</h2>
-        <a href="index.php">Inicio</a>
+        <a href="#inicio">Inicio</a>
+        <a href="#quienesSomos">¿Quiénes somos?</a>
+        <a href="#descargarApp">Descargar App</a>
 
-        <a href="quienesSomos.php">¿Quiénes somos?</a>
-
-        <a href="descargarApp.php">Descargar App</a>
       </div>
       <div class="right">
         <input id="btnFormulario" type="button" value="Iniciar Sesión">
@@ -32,7 +31,6 @@
             let div = document.querySelector('.body');
             document.querySelector('.body').style.display = 'block';
             div.classList.add('animated'); 
-
         });
     </script>
 

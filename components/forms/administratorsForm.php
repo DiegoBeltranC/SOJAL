@@ -12,36 +12,36 @@
         <div class="modal-content">
             <span id="closeModalBtn" class="close-btn">&times;</span>
             <h2>Registrar Administrador</h2>
-            <form id="contactForm">
+            <form id="administradorForm">
                 <div class="form-group">
                     <label for="name">Foto de Perfil:</label>
-                    <input type="file" id="imageUpload" accept="image/*">
+                    <input type="file" id="imageUpload" name="image" accept="image/*">
                 </div>
 
                 <div class="form-group">
                     <label for="name">Nombres:</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="nombre" required>
                 </div>
                 <div class="form-group">
                     <label for="name">Apellido Paterno:</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="apellidoP" required>
                 </div>
                 <div class="form-group">
                     <label for="name">Apellido Materno:</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="apellidoM" required>
                 </div>
                 <div class="form-group">
                     <label for="date">Fecha de Nacimiento:</label>
-                    <input type="date" id="date" name="date" required>
+                    <input type="date" id="date" name="fechaNacimiento" required>
                 </div>
 
                 <div class="form-group">
                     <label for="name">Número de Teléfono:</label>
-                    <input type="tel" id="name" name="name" required>
+                    <input type="tel" id="name" name="telefono" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" placeholder="Ej. usuario@dominio.com" required>
+                    <input type="email" id="email" name="correo" placeholder="Ej. usuario@dominio.com" required>
                 </div>
                 <div class="form-group">
                     <label>Enviar contraseña por:</label>
@@ -69,11 +69,14 @@
                         title="Ingresa un RFC válido en mayúsculas, por ejemplo, ABCD123456XXX" required>
                 </div>
 
+                <input type="hidden" name="opcion" value="1">
+                <input type="hidden" name="rol" value="3">
+                <button type="button" onclick="add()" class="register">Registrar</button>
 
-                <button type="submit">Registrar</button>
             </form>
         </div>
     </div>
+        <?php include '../components/cargando.php';?>
 
     <script src="../js/tables/administrators.js"></script>
 </body>

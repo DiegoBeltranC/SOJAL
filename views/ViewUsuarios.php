@@ -61,6 +61,9 @@
 
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+
+<?php include '../components/view/usersInfo.php';?>
+<?php include '../components/edit/usersEdit.php';?>
 <script src="../js/ViewSideBar.js"></script>
 <script src="../js/tables/users.js"></script>
 </body>

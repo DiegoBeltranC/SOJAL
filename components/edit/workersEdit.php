@@ -16,12 +16,14 @@
         <div class="modal-content">
             <span id="closeModalBtnEdit" class="close-btn">&times;</span>
             <h2>Editar Trabajador</h2>
-            <form id="trabajadorForm+" enctype="multipart/form-data">
+            <form id="userFormEdit" enctype="multipart/form-data">
                 <div class="form-group">
-                    <label for="name">Foto de Perfil:</label>
-                    <input type="file" id="imageUpload"  name="image" accept="image/*">
-                </div>
-
+                    <div class="profile-picture">
+                        <img id="imagenEdit" src="default-profile.png" alt="Foto de perfil" />
+                    </div>
+                        <label for="name">Foto de Perfil:</label>
+                        <input type="file" id="imageUpload"  name="image" accept="image/*">
+                    </div>
                 <div class="form-group">
                     <label for="name">Nombres:</label>
                     <input type="text" id="nombreEdit" name="nombre" required>
@@ -56,9 +58,10 @@
                     <label for="rfc">RFC:</label>
                     <input type="text" id="rfcEdit" name="rfc" placeholder="Ej. ABCD123456XXX" >
                 </div>
-                <input type="hidden" name="opcion" value="1">
-                <input type="hidden" name="rol" value="2">
-                <button type="button" onclick="add()" class="register">Actualizar</button>
+                <input type="hidden" name="opcion" value="5">
+                <input type="hidden" name="id" id="id" >
+                <input type="hidden" name="imagenAnterior" id="imagenAnterior" >
+                <button type="button" onclick="actualizar()" class="register">Actualizar</button>
 
             </form>
         </div>

@@ -32,7 +32,7 @@ if ($session['success'] === true) {
     $_SESSION['autenticado'] = true;
     $_SESSION['usuario'] = $session['usuario'];
     $_SESSION['correo'] = $session['correo'];
-    $_SESSION['perfil'] = $session['foto'];
+    $_SESSION['perfil'] = '../package/image/photos/' . $session['foto'];
     echo true;
 } else {
     echo false;
