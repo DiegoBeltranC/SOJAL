@@ -8,6 +8,7 @@ const closeModalBtn = document.getElementById('closeModalBtn');
 var tabla;
 document.addEventListener('DOMContentLoaded', () => {
     const modalView = document.getElementById('modalView');
+    const modalEdit = document.getElementById('modalEdit');
     const modalViewclose = document.getElementById('closeModalBtnView');
     const modalEditclose = document.getElementById('closeModalBtnEdit')
 
@@ -19,6 +20,19 @@ document.addEventListener('DOMContentLoaded', () => {
     modalEditclose.addEventListener('click', () => {
         modalEdit.style.display = 'none';
     });
+
+    window.addEventListener('click', (e) => {
+        if (e.target === modalView) {
+            modalView.style.display = 'none';
+        }
+    });
+
+    window.addEventListener('click', (e) => {
+        if (e.target === modalEdit) {
+            modalEdit.style.display = 'none';
+        }
+    });
+    
 
 });
 
@@ -48,6 +62,7 @@ $(document).ready(function () {
                 }
             }
         ],
+        "pageLength": 8,
         "language": {
             "lengthMenu": "", // Elimina "Show entries"
             "info": "", // Elimina la información de la paginación ("Showing 1 to 10 of 14 entries")

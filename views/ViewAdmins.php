@@ -1,9 +1,13 @@
 <?php
-  session_start();
-	if(isset($_SESSION['autenticado']) && $_SESSION['autenticado'] === 1){
+session_start();
+
+if (!isset($_SESSION['autenticado']) && $_SESSION['autenticado'] !== true) {
     header("Location: ../index.php");
-  }
+    exit(); 
+}
+
 ?>
+
 
 <!DOCTYPE html>
 <html lang="es">

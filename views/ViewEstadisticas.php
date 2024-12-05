@@ -1,8 +1,11 @@
 <?php
-  session_start();
-	if(isset($_SESSION['autenticado']) && $_SESSION['autenticado'] === 1){
+session_start();
+
+if (!isset($_SESSION['autenticado']) && $_SESSION['autenticado'] !== true) {
     header("Location: ../index.php");
-  }
+    exit(); 
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -28,18 +31,20 @@
     <!-- Contenido-->
     <div class="content" id="content">
         <h2>ESTADÍSTICAS</h2>
+        
+
         <div class="content-data">
               <div class="data espera">
                 <h3>En Espera</h3>
-                <p>100</p>
+                <p>15</p>
              </div>
              <div class="data progreso">
                 <h3>En Proceso</h3>
-                <p>70</p>
+                <p>6</p>
             </div>
              <div class="data finalizado">
                  <h3>Finalizados</h3>
-                 <p>50</p>
+                 <p>10</p>
              </div>
         </div>
         <div class="grid-container">

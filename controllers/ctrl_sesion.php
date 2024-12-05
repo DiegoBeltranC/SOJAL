@@ -29,7 +29,7 @@ $session = json_decode($json, true);
 
 if ($session['success'] === true) {
     session_start();
-    $_SESSION['autenticado'] = true;
+    $_SESSION['autenticado'] = 'true';
     $_SESSION['usuario'] = $session['usuario'];
     $_SESSION['correo'] = $session['correo'];
     $_SESSION['perfil'] = '../package/image/photos/' . $session['foto'];

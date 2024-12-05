@@ -16,6 +16,23 @@
   z-index: 4;
 }
 
+
+/* Estilo para el contenedor de las previsualizaciones */
+.preview-container {
+  display: flex;              /* Coloca las imágenes en fila */
+  overflow-x: auto;           /* Activa el scroll horizontal */
+  gap: 10px;                  /* Espacio entre las imágenes */
+  max-width: 90%;            /* El contenedor no debe ser más ancho que su contenedor padre */
+  padding: 10px;              /* Espaciado dentro del contenedor */
+}
+
+/* Estilo para cada imagen dentro del contenedor */
+.preview-container img {         /* Limita el tamaño máximo de las imágenes */
+  height: 10rem;               /* Mantiene la proporción original de la imagen */
+  object-fit: cover;          /* Asegura que la imagen se recorte adecuadamente */
+}
+
+
 /* Contenido del modal */
 .modal-content {
   background-color: white;

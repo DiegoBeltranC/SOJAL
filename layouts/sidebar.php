@@ -47,8 +47,8 @@ $current_page = basename($_SERVER['PHP_SELF']);
         <p>Usuarios</p>
       </li>
     </a>
-    <a href="#">
-      <li class="option">
+    <a href="ViewAsignacion.php">
+      <li class="option <?php echo $current_page == 'ViewAsignacion.php' ? 'active' : ''; ?>">
         <img class="mi-svg" src="../images/Icons/conjunto-de-habilidades.svg" alt="Mi SVG feliz"/>
         <p>Asignación</p>
       </li>

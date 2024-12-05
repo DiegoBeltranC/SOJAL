@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrar Administrador</title>
-    <link rel="stylesheet" href="../components/forms/FormStyles.css">
+    <title>Editar Administrador</title>
+    <link rel="stylesheet" href="../components/edit/FormEditStyles.css">
 </head>
 <body>
     <!-- Modal -->
     <div id="modalEdit" class="modal">
         <div class="modal-content">
             <span id="closeModalBtnEdit" class="close-btn">&times;</span>
-            <h2>Registrar Administrador</h2>
+            <h2>Editar Administrador</h2>
             <form id="trabajadorFormEdit" >
                 <div class="form-group">
                     <div class="profile-picture">

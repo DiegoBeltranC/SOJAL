@@ -5,19 +5,19 @@ require 'ctrl_password.php';
 use GuzzleHttp\Client;
 
 $opcion = $_POST['opcion'];
-$id = $_POST['id'];
-$idRol = $_POST['rol'];
-$fotoAnterior = $_POST['imagenAnterior'];
-$fotoPerfil = basename($_FILES['image']['name']);
-$nombre = $_POST['nombre'];
-$apellidoP = $_POST['apellidoP'];
-$apellidoM = $_POST['apellidoM'];
-$fechaNacimiento = $_POST['fechaNacimiento'];
-$telefono = $_POST['telefono'];
-$correo = $_POST['correo'];
+$id = $_POST['id'] ?? null;
+$idRol = $_POST['rol'] ?? null;
+$fotoAnterior = $_POST['imagenAnterior'] ?? null;
+$fotoPerfil = basename($_FILES['image']['name']) ?? null;
+$nombre = $_POST['nombre'] ?? null;
+$apellidoP = $_POST['apellidoP'] ?? null;
+$apellidoM = $_POST['apellidoM'] ?? null;
+$fechaNacimiento = $_POST['fechaNacimiento'] ?? null;
+$telefono = $_POST['telefono'] ?? null;
+$correo = $_POST['correo'] ?? null;
 
-$RFC = $_POST['rfc'];
-$CURP = $_POST['curp'];
+$RFC = $_POST['rfc'] ?? null;
+$CURP = $_POST['curp'] ?? null;
 
 
 $client = new Client();
@@ -224,6 +224,14 @@ function actualizar() {
             [
                 'name'     => 'correo',
                 'contents' => $correo,
+            ],
+            [
+                'name'     => 'rfc',
+                'contents' => $RFC,
+            ],
+            [
+                'name'     => 'curp',
+                'contents' => $CURP,
             ],
         ],
     ]);

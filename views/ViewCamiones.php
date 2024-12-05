@@ -1,8 +1,11 @@
 <?php
-  session_start();
-	if(isset($_SESSION['autenticado']) && $_SESSION['autenticado'] === 1){
+session_start();
+
+if (!isset($_SESSION['autenticado']) && $_SESSION['autenticado'] !== true) {
     header("Location: ../index.php");
-  }
+    exit(); 
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -17,6 +20,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <title>Camiones</title>
+
+    <link rel="stylesheet" href="../css/sweetalert2.min.css" />
+    <script src="../js/sweetalert2.all.js"></script>
     <style>
     .content {
 
@@ -58,7 +64,10 @@
 
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+
 <?php include '../components/forms/trucksForm.php';?>
+<?php include '../components/edit/truckEdit.php';?>
+<?php include '../components/view/truckInfo.php';?>
 
 <script src="../js/ViewSideBar.js"></script>
 

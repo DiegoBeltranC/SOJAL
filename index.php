@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SOJAL | Home</title>
     <link rel="icon" href="./images/icons/logo.png" />
-    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="./css/ViewHome.css" />
+    <link rel="stylesheet" href="./css/animate.min.css" />
 </head>
 <body>
+
+
     <?php include './components/viewLogin.php'; ?>
     <?php include './layouts/startnavbar.php'; ?>
 
@@ -39,29 +42,29 @@
     <!-- Tarjetas de integrantes del equipo -->
     <div class="team-container">
         <div class="team-card">
-            <img src="./images/team1.jpg" alt="Integrante 1">
+            <img src="package/image/photos/Userdefault.png" alt="Integrante 1">
             <h3>Integrante 1</h3>
-            <p>Desarrollador Backend</p>
+            <p>Jonathan Alexis Cherriz Solis</p>
         </div>
         <div class="team-card">
-            <img src="./images/team2.jpg" alt="Integrante 2">
+            <img src="package/image/photos/Userdefault.png" alt="Integrante 2">
             <h3>Integrante 2</h3>
-            <p>Desarrollador Frontend</p>
+            <p>José Luis Chávez Zetina</p>
         </div>
         <div class="team-card">
-            <img src="./images/team3.jpg" alt="Integrante 3">
+            <img src="package/image/photos/Userdefault.png" alt="Integrante 3">
             <h3>Integrante 3</h3>
-            <p>Diseñador UX/UI</p>
+            <p>Ariel Alejandro Rivero Moo</p>
         </div>
         <div class="team-card">
-            <img src="./images/team4.jpg" alt="Integrante 4">
+            <img src="package/image/photos/Userdefault.png" alt="Integrante 4">
             <h3>Integrante 4</h3>
-            <p>Gestor de Proyectos</p>
+            <p>Diego Alberto Beltrán Can</p>
         </div>
         <div class="team-card">
-            <img src="./images/team5.jpg" alt="Integrante 5">
+            <img src="package/image/photos/Userdefault.png" alt="Integrante 5">
             <h3>Integrante 5</h3>
-            <p>Analista de Datos</p>
+            <p>Andrea Dionicio Tah</p>
         </div>
     </div>
 </section>

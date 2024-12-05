@@ -33,6 +33,7 @@ $(document).ready(function() {
                 }
             }
         ],
+        "pageLength": 8,
         "language": {
             "lengthMenu": "",
             "info": "",

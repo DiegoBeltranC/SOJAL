@@ -165,6 +165,7 @@ function cargarTabla() {
                 }
             }
         ],
+        "pageLength": 8,
         "language": {
             "lengthMenu": "",
             "info": "",
@@ -257,7 +258,7 @@ function actualizar() {
 
     $('#loading').show();  // Muestra el div con el GIF
 
-    const form = $('#trabajadorFormEdit')[0];
+    const form = $('#userFormEdit')[0];
 
     // Crear un objeto FormData
     const formData = new FormData(form);
@@ -284,6 +285,7 @@ function actualizar() {
                 modalEdit.style.display = 'none';
                
             } else {
+                
                 Swal.fire({
                     title: 'Error',
                     text: 'Hubo un problema al registrar al trabajador.',
